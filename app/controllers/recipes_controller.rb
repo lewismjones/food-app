@@ -15,9 +15,17 @@ class RecipesController < ApplicationController
   # GET /recipes/new
   def new
     @recipe = Recipe.new
-    # @ingredient = Ingredient.new(recipe_id=@recipe.id)
-    # @instruction = Instruction.new(recipe_id=@recipe.id)
+    @instruction = Instruction.new
+  end
 
+  def newingredient
+    @ingredient = Ingredient.new
+    @recipe = Recipe.find(params[:recipe_id])
+  end
+
+  def newinstruction
+    @instruction = Instruction.new
+    @recipe = Recipe.find(params[:recipe_id])
   end
 
   # GET /recipes/1/edit
@@ -32,13 +40,33 @@ class RecipesController < ApplicationController
 
     respond_to do |format|
       if @recipe.save
-        format.html { redirect_to @recipe, notice: 'Recipe was successfully created.' }
+        format.html {redirect_to new_ingredient_path(@recipe)}
         format.json { render :show, status: :created, location: @recipe }
       else
         format.html { render :new }
         format.json { render json: @recipe.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def create_ingredient
+    @ingredient = Ingredient.new(ingredient_params)
+    @recipe = Recipe.find(params[:ingredient][:recipe_id])
+    if @ingredient.save!
+      redirect_to new_instruction_path(@recipe)
+    else
+      render :new
+  end
+end
+
+def create_instruction
+  @instruction = Instruction.new(instruction_params)
+  @recipe = Recipe.find(params[:instruction][:recipe_id])
+  if @instruction.save!
+    redirect_to @recipe
+  else
+    render :new
+end
   end
 
   # PATCH/PUT /recipes/1
@@ -74,6 +102,14 @@ class RecipesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def recipe_params
       params.require(:recipe).permit(:description, :category_id)
+    end
+
+    def ingredient_params
+      params.require(:ingredient).permit(:name, :recipe_id)
+    end
+
+    def instruction_params
+      params.require(:instruction).permit(:step, :recipe_id)
     end
 
 end

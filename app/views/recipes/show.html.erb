@@ -2,12 +2,13 @@
 
 <p>
   <strong>Description:</strong>
-  <%= @recipe.description
-      # @ingredient.where(id: @recipe.id)
-      # @instruction.where(id: @recipe.id)
-
-  %>
+  <%= @recipe.description %>
 </p>
-
+<p>Ingredients <br>
+<%= @recipe.ingredient.name %>
+</p>
+<p> Instructions <br>
+<%= @recipe.instruction.step %>
+</p>
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 <%= link_to 'Back', recipes_path %>
