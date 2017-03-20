@@ -84,7 +84,7 @@ end
   end
 
   def update_ingredient
-    @ingredient = Ingredient.where(recipe_id: @recipe.id)
+    @ingredient = Ingredient.new(ingredient_params)
     @recipe = Recipe.find(params[:ingredient][:recipe_id])
     if @ingredient.save!
       redirect_to edit_instruction_path(@recipe)
@@ -94,7 +94,7 @@ end
 end
 
 def update_instruction
-  @ingredient = Ingredient.where(recipe_id: @recipe.id)
+  @instruction = Instruction.new(instruction_params)
   @recipe = Recipe.find(params[:instruction][:recipe_id])
   if @instruction.save!
     redirect_to @recipe
