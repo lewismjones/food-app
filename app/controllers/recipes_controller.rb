@@ -74,7 +74,7 @@ end
   def update
     respond_to do |format|
       if @recipe.update(recipe_params)
-        format.html { redirect_to @recipe, notice: 'Recipe was successfully updated.' }
+        format.html { redirect_to edit_ingredient_path(@recipe), notice: 'Recipe was successfully updated.' }
         format.json { render :show, status: :ok, location: @recipe }
       else
         format.html { render :edit }
@@ -82,6 +82,28 @@ end
       end
     end
   end
+
+  def update_ingredient
+    @ingredient = Ingredient.new(ingredient_params)
+    @recipe = Recipe.find(params[:ingredient][:recipe_id])
+    if @ingredient.save!
+      redirect_to edit_instruction_path(@recipe)
+    else
+      render :new
+  end
+end
+
+def update_instruction
+  @instruction = Instruction.new(instruction_params)
+  @recipe = Recipe.find(params[:instruction][:recipe_id])
+  if @instruction.save!
+    redirect_to @recipe
+  else
+    render :new
+end
+  end
+
+
 
   # DELETE /recipes/1
   # DELETE /recipes/1.json
