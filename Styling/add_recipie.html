@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Add your own recipie!</title>
+  </head>
+  <body>
+    <header>
+        <div class="nav">
+          <ul id="head">
+            <li class ="h-left"><a href="index.html">Home</a></li>
+            <li class ="h-left"><a href="beef.html">Beef</a></li>
+            <li class ="h-left"><a href="poultry.html">Poultry</a></li>
+            <li class ="h-left"><a href="seafood.html">Seafood</a></li>
+            <li class ="h-left"><a href="vegetarian.html">Vegetarian/Vegan</a></li>
+            <li class ="h-left"><a class ="active">Add your recipie</a></li>
+            <li class ="h-right"><a href="https://twitter.com" target="_blank"><i class="fa fa-lg fa-twitter-square"></i></a></li>
+            <li class ="h-right"><a href="https://www.facebook.com" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a></li>
+            <li class ="h-right"><a href="https://www.pinterest.com" target="_blank"><i class="fa fa-lg fa-pinterest-square"></i></a></li>
+            <li class ="h-right"><a href="https://www.instagram.com" target="_blank"><i class="fa fa-lg fa-instagram-square"></i></a></li>
+          </ul>
+
+        </div>
+      </header>
+
+
+      <div id ="blank">
+
+      </div>
+      <div class="form-container">
+
+      <form  method="post">
+        <h2>Add your own recipie</h2>
+        <p>Dish name:</p><input type="text" name="Name" value="">
+        <p>Category: </p><select name="category">
+          <option value="beef">Beef</option>
+          <option value="poultry">Poultry</option>
+          <option value="seafood">Seafood</option>
+          <option value="vegetarian">Vegetarian/Vegan</option>
+        </select>
+        <p>Ingredients:</p><textarea name="ingredients" rows="10" cols="30">Place ingredients here.</textarea>
+        <p>Directions:</p><textarea name="directions" rows="10" cols="30">Place directions here</textarea>
+        <p>Picture:</p><input type="text" name="Picture" value="">
+        <br />
+        <br />
+        <input type="submit" value="Submit">
+      </form>
+      </div>
+
+
+</body>

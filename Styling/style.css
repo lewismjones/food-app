@@ -1,0 +1,129 @@
+/*Headers*/
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+}
+
+li {
+   float: left;
+}
+
+li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+li a:hover {
+   background-color: #111;
+}
+
+li a.active {
+ background-color: red;
+}
+
+
+.h-right {
+ float: right;
+}
+/*Headers*/
+
+/*Code for empty div*/
+#blank{
+  margin: 150px;
+}
+/*Code for empty div*/
+
+/*form div code*/
+.form-container{
+  background-color: white;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+/*form div code*/
+
+/*Recipie cards*/
+
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+   margin: 25px;
+   background-color: white;
+}
+
+
+.card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.container {
+   padding: 2px 16px;
+
+}
+
+.recipie-pic {
+ min-width: 200px;
+ min-height: 200px;
+ max-width: 400px;
+ max-height: 400px;
+}
+
+.recipies {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+
+}
+/*Recipie Cards*/
+
+/*Recipie page styling*/
+.recipie{
+  margin: 25px;
+  background-color: white;
+}
+/*Recipie page styling*/
+
+
+
+/* sets base style for each page */
+html {
+-webkit-background-size: contain;
+-moz-background-size: contain;
+-o-background-size: contain;
+background-size: contain;
+background-color: black;
+}
+
+/* set background image per page */
+.home-bg {
+background: url(images/web.jpg) no-repeat  center fixed;
+background-size: cover;
+
+}
+.beef-bg {
+background: url(images/web.jpg) no-repeat center center fixed;
+}
+
+
+.chicken-bg {
+background: url(images/web.jpg) no-repeat center center fixed;
+}
+
+@media (max-width: 601px) {
+ .beef-bg {
+   background: url(images/web.jpg) no-repeat fixed;
+   background-size:cover;
+ }
+ .chicken-bg {
+   background: url(images/web.jpg) no-repeat fixed;
+   background-size:auto;
+
+ }
+}
