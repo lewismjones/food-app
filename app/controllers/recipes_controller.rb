@@ -38,11 +38,16 @@ before_action :set_recipe, only: [:show, :edit, :update, :destroy]
 
   def editingredient
     @recipe = Recipe.find(params[:recipe_id])
-    @ingredient = Ingredient.find(1)
+    @ingredient = @recipe.ingredient
+    puts "************"
+    puts @recipe.ingredient
 
   end
 
   def editinstruction
+    @recipe = Recipe.find(params[:recipe_id])
+    @instruction = @recipe.instruction
+
   end
 
   # POST /recipes
