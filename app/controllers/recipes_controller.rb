@@ -1,5 +1,7 @@
 class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
+  before_action :set_ingredient, only: [:show, :edit, :update, :destroy]
+  before_action :set_instruction, only: [:show, :edit, :update, :destroy]
 
   # GET /recipes
   # GET /recipes.json
@@ -28,15 +30,28 @@ class RecipesController < ApplicationController
     @recipe = Recipe.find(params[:recipe_id])
   end
 
+
+
+
   # GET /recipes/1/edit
   def edit
+
+  end
+
+  def editingredient
+    @recipe = Recipe.find(params[:recipe_id])
+    @ingredient = Ingredient.find(1)
+
+  end
+
+  def editinstruction
   end
 
   # POST /recipes
   # POST /recipes.json
   def create
     @recipe = Recipe.new(recipe_params)
-    puts '***'*10; p params; puts '***'*10;
+
 
     respond_to do |format|
       if @recipe.save
@@ -66,15 +81,15 @@ def create_instruction
     redirect_to @recipe
   else
     render :new
-end
   end
+end
 
   # PATCH/PUT /recipes/1
   # PATCH/PUT /recipes/1.json
   def update
     respond_to do |format|
       if @recipe.update(recipe_params)
-        format.html { redirect_to edit_ingredient_path(@recipe), notice: 'Recipe was successfully updated.' }
+        format.html { redirect_to edit_ingredient_path(@recipe) }
         format.json { render :show, status: :ok, location: @recipe }
       else
         format.html { render :edit }
@@ -84,24 +99,24 @@ end
   end
 
   def update_ingredient
-    @ingredient = Ingredient.new(ingredient_params)
     @recipe = Recipe.find(params[:ingredient][:recipe_id])
-    if @ingredient.save!
+    @ingredient = Ingredient.find_by recipe_id: @recipe.id
+    if @ingredient.update(ingredient_params)
       redirect_to edit_instruction_path(@recipe)
     else
       render :new
+    end
   end
-end
 
 def update_instruction
-  @instruction = Instruction.new(instruction_params)
+  @instruction = Instruction.find_by(instruction_params)
   @recipe = Recipe.find(params[:instruction][:recipe_id])
   if @instruction.save!
     redirect_to @recipe
   else
     render :new
-end
   end
+end
 
 
 
@@ -119,6 +134,12 @@ end
     # Use callbacks to share common setup or constraints between actions.
     def set_recipe
       @recipe = Recipe.find(params[:id])
+    end
+    def set_ingredient
+      @ingredient = Ingredient.find_by(recipe_id: @recipe.id)
+    end
+    def set_instruction
+      @instruction = Instruction.find_by(recipe_id: @recipe.id)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
