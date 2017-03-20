@@ -11,8 +11,8 @@ class CategoriesController < ApplicationController
   # GET /categories/1.json
   def show
 
-    @recipe = Recipe.find(params[:category_id])
-# @category = Category.find(params[:id])
+    @recipe = Recipe.all
+@category = Category.find(params[:id])
   end
 
   # GET /categories/new
