@@ -3,12 +3,32 @@
   <head>
     <title>FoodApp2</title>
     <%= csrf_meta_tags %>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
+    <header>
+        <div class="nav">
+          <ul id="head">
+            <li class ="h-left"><a class="active">Home</a></li>
+            <li class ="h-left"><a href="/categories/1">Beef</a></li>
+            <li class ="h-left"><a href="/categories/2">Poultry</a></li>
+            <li class ="h-left"><a href="/categories/3">Seafood</a></li>
+            <li class ="h-left"><a href="/categories/4">Vegetarian/Vegan</a></li>
+            <!-- <li class ="h-left"><a href="add_recipie.html">Add your recipie</a></li> -->
+            <li class ="h-right"><a href="https://twitter.com" target="_blank"><i class="fa fa-lg fa-twitter-square"></i></a></li>
+            <li class ="h-right"><a href="https://www.facebook.com" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a></li>
+            <li class ="h-right"><a href="https://www.pinterest.com" target="_blank"><i class="fa fa-lg fa-pinterest-square"></i></a></li>
+          </ul>
+
+        </div>
+    </header>
+
     <%= yield %>
   </body>
 </html>

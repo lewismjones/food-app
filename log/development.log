@@ -269,3 +269,2489 @@ Processing by CategoriesController#show as HTML
 Completed 200 OK in 34ms (Views: 29.2ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/recipes" for ::1 at 2017-03-20 16:13:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (6.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (6.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 1332ms (Views: 1269.5ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/recipes" for ::1 at 2017-03-20 16:14:13 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 50ms (Views: 45.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/beef.html" for ::1 at 2017-03-20 16:14:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/beef.html"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (17.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (138.4ms)
+Started GET "/recipes" for ::1 at 2017-03-20 16:14:19 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29ms (Views: 23.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-03-20 16:14:55 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 16:15:00 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (51.6ms)
+  Rendered recipes/new.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 125ms (Views: 75.6ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/recipes" for ::1 at 2017-03-20 16:22:10 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 73ms (Views: 68.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beef" for ::1 at 2017-03-20 16:22:12 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/beef"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (9.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (158.5ms)
+Started GET "/categories" for ::1 at 2017-03-20 16:22:20 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/4" for ::1 at 2017-03-20 16:22:24 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (3.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 84ms (Views: 64.9ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/categories" for ::1 at 2017-03-20 16:22:45 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 52ms (Views: 47.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/category/4" for ::1 at 2017-03-20 16:22:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/category/4"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (9.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (135.7ms)
+Started GET "/categories" for ::1 at 2017-03-20 16:22:51 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 30ms (Views: 25.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/categories/4/edit" for ::1 at 2017-03-20 16:22:53 -0400
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering categories/edit.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.4ms)
+  Rendered categories/edit.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 43ms (Views: 33.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/categories/4" for ::1 at 2017-03-20 16:22:56 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 46ms (Views: 35.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/category/4" for ::1 at 2017-03-20 16:23:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/category/4"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (6.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (136.1ms)
+Started GET "/categories/4" for ::1 at 2017-03-20 16:23:16 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 43ms (Views: 36.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/category/4" for ::1 at 2017-03-20 16:23:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/category/4"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (8.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (152.6ms)
+Started GET "/categories/4" for ::1 at 2017-03-20 16:23:29 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (7.9ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 77ms (Views: 63.5ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/categories/4" for ::1 at 2017-03-20 16:23:37 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (12.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 48ms (Views: 27.6ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/categories/4" for ::1 at 2017-03-20 16:23:42 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 61ms (Views: 53.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories/poultry.html" for ::1 at 2017-03-20 16:23:44 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"poultry"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category with 'id'=poultry):
+  
+app/controllers/categories_controller.rb:70:in `set_category'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (110.0ms)
+Started GET "/categories/4" for ::1 at 2017-03-20 16:23:48 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/categories/4" for ::1 at 2017-03-20 16:23:49 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (12.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 47ms (Views: 29.4ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/categories" for ::1 at 2017-03-20 16:27:22 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 37ms (Views: 30.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/categories/2" for ::1 at 2017-03-20 16:27:25 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 62ms (Views: 56.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recipes/2/edit" for ::1 at 2017-03-20 16:27:28 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (12.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (17.0ms)
+  Rendered recipes/edit.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 59ms (Views: 37.2ms | ActiveRecord: 13.3ms)
+
+
+Started PATCH "/recipes/2" for ::1 at 2017-03-20 16:27:29 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EH1S3rukbN952KCaktk5fqHH+yTKyKD5n44xUxNC3MdgFX9LrC8y7ls9ArlKPp4byZPkyj/BYTKFSILmm3Hmdw==", "recipe"=>{"description"=>"wow", "category_id"=>"2"}, "commit"=>"Update Recipe", "id"=>"2"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (22.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/2/ingredient/edit
+Completed 302 Found in 46ms (ActiveRecord: 25.0ms)
+
+
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 16:27:29 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.8ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (144.9ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (146.7ms)
+Completed 500 Internal Server Error in 207ms (ActiveRecord: 21.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `ingredient_path' for #<#<Class:0x007f92141a2db0>:0x007f92114e1c18>
+Did you mean?  ingredients_path):
+    1: <%= form_for(ingredient) do |f| %>
+    2:   <% if ingredient.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132675881240'
+app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredient_html_erb___3397441157071999235_70132666143700'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.6ms)
+Started GET "/categories/2" for ::1 at 2017-03-20 16:28:55 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (7.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 65ms (Views: 48.6ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/categories/1" for ::1 at 2017-03-20 16:29:04 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category with 'id'=1):
+  
+app/controllers/categories_controller.rb:70:in `set_category'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.9ms)
+Started GET "/categories/2" for ::1 at 2017-03-20 16:29:07 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 32ms (Views: 26.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/recipes/2" for ::1 at 2017-03-20 16:29:34 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mIngredient Load (9.1ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mInstruction Load (0.4ms)[0m  [1m[34mSELECT  "instructions".* FROM "instructions" WHERE "instructions"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 75ms (Views: 60.3ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/recipes/2/edit" for ::1 at 2017-03-20 16:29:40 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (11.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (15.7ms)
+  Rendered recipes/edit.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 59ms (Views: 38.2ms | ActiveRecord: 12.5ms)
+
+
+Started PATCH "/recipes/2" for ::1 at 2017-03-20 16:31:24 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/2xPaGKsOn9gIp+Ei62mwopNF/nK2FyW7kFuaHR264uPBGL9dSdkTkLHPadTSgGn4hkIFz/RnV30h93d/EXROw==", "recipe"=>{"description"=>"wowers", "category_id"=>"2"}, "commit"=>"Update Recipe", "id"=>"2"}
+  [1m[36mRecipe Load (2.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (2.3ms)[0m  [1m[33mUPDATE "recipes" SET "description" = $1, "updated_at" = $2 WHERE "recipes"."id" = $3[0m  [["description", "wowers"], ["updated_at", 2017-03-20 20:31:24 UTC], ["id", 2]]
+  [1m[35m (49.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/2/ingredient/edit
+Completed 302 Found in 65ms (ActiveRecord: 55.2ms)
+
+
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 16:31:24 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIngredient Load (1.9ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (141.5ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (143.3ms)
+Completed 500 Internal Server Error in 179ms (ActiveRecord: 2.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `ingredient_path' for #<#<Class:0x007f92141a2db0>:0x007f921447b960>
+Did you mean?  ingredients_path):
+    1: <%= form_for(ingredient) do |f| %>
+    2:   <% if ingredient.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132702127780'
+app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredient_html_erb___3397441157071999235_70132691108480'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.4ms)
+Started GET "/recipes" for ::1 at 2017-03-20 16:31:30 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 55ms (Views: 52.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/2/edit" for ::1 at 2017-03-20 16:31:38 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (5.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (20.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (25.9ms)
+  Rendered recipes/edit.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 76ms (Views: 46.5ms | ActiveRecord: 25.5ms)
+
+
+Started PATCH "/recipes/2" for ::1 at 2017-03-20 16:32:33 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W8Sni7ZmG0ffY/V5RnBMRKhmzJQC4LGYFyhTUw6UfFwrrIoeoe1Fdv2GV1qel+shwDLTevfpcFMN7uDmhqdG7A==", "recipe"=>{"description"=>"wowers", "category_id"=>"2"}, "commit"=>"Update Recipe", "id"=>"2"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/2/ingredient/edit
+Completed 302 Found in 7ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 16:32:34 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  [1m[36mRecipe Load (1.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIngredient Load (5.3ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (148.4ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (150.0ms)
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 7.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `ingredient_path' for #<#<Class:0x007f92141a2db0>:0x007f9212453110>
+Did you mean?  ingredients_path):
+    1: <%= form_for(ingredient) do |f| %>
+    2:   <% if ingredient.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132674140160'
+app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredient_html_erb___3397441157071999235_70132674250220'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.2ms)
+Started PUT "/__web_console/repl_sessions/0a2e959bcf239827c8072a88539fbdd8" for ::1 at 2017-03-20 16:36:25 -0400
+Started PUT "/__web_console/repl_sessions/0a2e959bcf239827c8072a88539fbdd8" for ::1 at 2017-03-20 16:36:28 -0400
+Started PUT "/__web_console/repl_sessions/0a2e959bcf239827c8072a88539fbdd8" for ::1 at 2017-03-20 16:36:33 -0400
+Started GET "/2/ingredient/new" for ::1 at 2017-03-20 16:39:40 -0400
+Processing by RecipesController#newingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/newingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (4.1ms)
+  Rendered recipes/newingredient.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 47ms (Views: 43.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/ingredients" for ::1 at 2017-03-20 16:40:08 -0400
+Processing by RecipesController#create_ingredient as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u+ifMVig5WyRp8NhCQgt5wqR8SPTOSoTBr/TDdPtgHg034BQJr0WgPl368mfT9qbTM+QhBlET+U4nI1Gq0wzkQ==", "ingredient"=>{"name"=>"olives", "recipe_id"=>"2"}, "commit"=>"Create Ingredient"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "olives"], ["created_at", 2017-03-20 20:40:08 UTC], ["updated_at", 2017-03-20 20:40:08 UTC], ["recipe_id", 2]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/2/instruction/new
+Completed 302 Found in 14ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/2/instruction/new" for ::1 at 2017-03-20 16:40:08 -0400
+Processing by RecipesController#newinstruction as HTML
+  Parameters: {"recipe_id"=>"2"}
+  [1m[36mRecipe Load (4.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/newinstruction.html.erb within layouts/application
+  Rendered recipes/_form2.html.erb (3.1ms)
+  Rendered recipes/newinstruction.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 38ms (Views: 28.7ms | ActiveRecord: 4.5ms)
+
+
+Started PUT "/__web_console/repl_sessions/0a2e959bcf239827c8072a88539fbdd8" for ::1 at 2017-03-20 16:40:30 -0400
+Started PUT "/__web_console/repl_sessions/0a2e959bcf239827c8072a88539fbdd8" for ::1 at 2017-03-20 16:40:35 -0400
+Started PUT "/__web_console/repl_sessions/0a2e959bcf239827c8072a88539fbdd8" for ::1 at 2017-03-20 16:40:35 -0400
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 16:44:12 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (170.8ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (175.1ms)
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `ingredient_path' for #<#<Class:0x007f92141a2db0>:0x007f92143d2fb8>
+Did you mean?  ingredients_path):
+    1: <%= form_for(ingredients) do |f| %>
+    2:   <% if ingredients.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132675187440'
+app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredient_html_erb___3397441157071999235_70132690754800'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.8ms)
+Started GET "/recipes/2/edit" for ::1 at 2017-03-20 16:44:16 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (3.5ms)
+  Rendered recipes/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 44ms (Views: 38.5ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/recipes/2" for ::1 at 2017-03-20 16:44:21 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rdWzwHD/bfIxlFV/GdKQNRplbNp4p/qqjixlSSBe9+4i4qyhDuKeHllEfdePlWdJXDsNfbLan1ywDzsCWP9EBw==", "recipe"=>{"description"=>"wowers", "category_id"=>"2"}, "commit"=>"Update Recipe", "id"=>"2"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/2/ingredient/edit
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 16:44:21 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (153.2ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (156.3ms)
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `ingredient_path' for #<#<Class:0x007f92141a2db0>:0x007f9212502b88>
+Did you mean?  ingredients_path):
+    1: <%= form_for(ingredients) do |f| %>
+    2:   <% if ingredients.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132701432180'
+app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredient_html_erb___3397441157071999235_70132674609760'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.4ms)
+Started PUT "/__web_console/repl_sessions/e6cb906a06f08ec94270a734490dd46a" for ::1 at 2017-03-20 16:44:36 -0400
+Started PUT "/__web_console/repl_sessions/e6cb906a06f08ec94270a734490dd46a" for ::1 at 2017-03-20 16:44:39 -0400
+Started PUT "/__web_console/repl_sessions/e6cb906a06f08ec94270a734490dd46a" for ::1 at 2017-03-20 16:44:49 -0400
+Started PUT "/__web_console/repl_sessions/e6cb906a06f08ec94270a734490dd46a" for ::1 at 2017-03-20 16:44:57 -0400
+Started PUT "/__web_console/repl_sessions/e6cb906a06f08ec94270a734490dd46a" for ::1 at 2017-03-20 16:45:00 -0400
+Started PUT "/__web_console/repl_sessions/e6cb906a06f08ec94270a734490dd46a" for ::1 at 2017-03-20 16:45:13 -0400
+Started PUT "/__web_console/repl_sessions/e6cb906a06f08ec94270a734490dd46a" for ::1 at 2017-03-20 16:45:16 -0400
+Started PUT "/__web_console/repl_sessions/e6cb906a06f08ec94270a734490dd46a" for ::1 at 2017-03-20 16:45:18 -0400
+Started GET "/recipes/2/edit" for ::1 at 2017-03-20 16:52:53 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (3.7ms)
+  Rendered recipes/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 57ms (Views: 52.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/2/edit" for ::1 at 2017-03-20 16:52:55 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (5.5ms)
+  Rendered recipes/edit.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 46ms (Views: 39.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/recipes" for ::1 at 2017-03-20 16:52:56 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (2.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/categories/1" for ::1 at 2017-03-20 16:52:58 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category with 'id'=1):
+  
+app/controllers/categories_controller.rb:70:in `set_category'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.0ms)
+Started GET "/recipes" for ::1 at 2017-03-20 16:53:00 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for ::1 at 2017-03-20 16:53:32 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 49.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 16:54:38 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (4.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (9.5ms)
+  Rendered recipes/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 45ms (Views: 38.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 16:57:05 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (4.4ms)
+  Rendered recipes/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 49ms (Views: 45.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 16:57:07 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (4.9ms)
+  Rendered recipes/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 16:57:09 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (3.8ms)
+  Rendered recipes/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 16:57:21 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (3.2ms)
+  Rendered recipes/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 16:58:18 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (4.1ms)
+  Rendered recipes/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 16:58:19 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (3.7ms)
+  Rendered recipes/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 16:58:46 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (3.4ms)
+  Rendered recipes/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 16:58:47 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (3.5ms)
+  Rendered recipes/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 16:59:47 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (2.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (7.6ms)
+  Rendered recipes/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 48ms (Views: 43.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 16:59:49 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (3.4ms)
+  Rendered recipes/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 45ms (Views: 41.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 17:00:25 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (3.8ms)
+  Rendered recipes/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 44ms (Views: 40.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 17:00:33 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (3.8ms)
+  Rendered recipes/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 44ms (Views: 40.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 17:00:34 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (3.0ms)
+  Rendered recipes/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 17:00:35 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (4.0ms)
+  Rendered recipes/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 17:00:35 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (14.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (18.8ms)
+  Rendered recipes/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 61ms (Views: 42.1ms | ActiveRecord: 14.0ms)
+
+
+Started POST "/recipes" for ::1 at 2017-03-20 17:01:26 -0400
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7MF3b8vHad6iU3h2kFAF7Rb5S7qrtNdTTWnJ3Mc5j95j9mgOtdqaMsqDUN4GF/KRUKcqHWHJsqVzSpeXv5g8Nw==", "recipe"=>{"description"=>"", "category_id"=>"2"}, "commit"=>"Create Recipe"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (3.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (6.0ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", ""], ["created_at", 2017-03-20 21:01:26 UTC], ["updated_at", 2017-03-20 21:01:26 UTC], ["category_id", 2]]
+  [1m[35m (46.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/3/ingredient/new
+Completed 302 Found in 66ms (ActiveRecord: 56.0ms)
+
+
+Started GET "/3/ingredient/new" for ::1 at 2017-03-20 17:01:26 -0400
+Processing by RecipesController#newingredient as HTML
+  Parameters: {"recipe_id"=>"3"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/newingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (302.4ms)
+  Rendered recipes/newingredient.html.erb within layouts/application (304.5ms)
+Completed 500 Internal Server Error in 320ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ingredients' for #<#<Class:0x007f92141a2db0>:0x007f9212350330>
+Did you mean?  ingredient
+               @ingredient):
+    1: <%= form_for(ingredients) do |f| %>
+    2:   <% if ingredients.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132673742420'
+app/views/recipes/newingredient.html.erb:5:in `_app_views_recipes_newingredient_html_erb___527882091118293009_70132673713020'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.9ms)
+Started POST "/recipes" for ::1 at 2017-03-20 17:01:37 -0400
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7MF3b8vHad6iU3h2kFAF7Rb5S7qrtNdTTWnJ3Mc5j95j9mgOtdqaMsqDUN4GF/KRUKcqHWHJsqVzSpeXv5g8Nw==", "recipe"=>{"description"=>"lgkbmn ", "category_id"=>"2"}, "commit"=>"Create Recipe"}
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "lgkbmn "], ["created_at", 2017-03-20 21:01:37 UTC], ["updated_at", 2017-03-20 21:01:37 UTC], ["category_id", 2]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/4/ingredient/new
+Completed 302 Found in 12ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/4/ingredient/new" for ::1 at 2017-03-20 17:01:37 -0400
+Processing by RecipesController#newingredient as HTML
+  Parameters: {"recipe_id"=>"4"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/newingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (249.8ms)
+  Rendered recipes/newingredient.html.erb within layouts/application (251.5ms)
+Completed 500 Internal Server Error in 260ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ingredients' for #<#<Class:0x007f92141a2db0>:0x007f921586bf38>
+Did you mean?  ingredient
+               @ingredient):
+    1: <%= form_for(ingredients) do |f| %>
+    2:   <% if ingredients.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132665554900'
+app/views/recipes/newingredient.html.erb:5:in `_app_views_recipes_newingredient_html_erb___527882091118293009_70132701563980'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.9ms)
+Started GET "/4/ingredient/new" for ::1 at 2017-03-20 17:01:56 -0400
+Processing by RecipesController#newingredient as HTML
+  Parameters: {"recipe_id"=>"4"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/newingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (233.7ms)
+  Rendered recipes/newingredient.html.erb within layouts/application (235.6ms)
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ingredients' for #<#<Class:0x007f92141a2db0>:0x007f9211491ce0>
+Did you mean?  ingredient
+               @ingredient):
+    1: <%= form_for(ingredient) do |f| %>
+    2:   <% if ingredients.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+    5: 
+  
+app/views/recipes/_form1.html.erb:2:in `block in _app_views_recipes__form__html_erb___1386637793395279475_70132691805220'
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132691805220'
+app/views/recipes/newingredient.html.erb:5:in `_app_views_recipes_newingredient_html_erb___527882091118293009_70132665980220'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.3ms)
+Started GET "/4/ingredient/new" for ::1 at 2017-03-20 17:02:18 -0400
+Processing by RecipesController#newingredient as HTML
+  Parameters: {"recipe_id"=>"4"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/newingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (1.9ms)
+  Rendered recipes/newingredient.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 37ms (Views: 33.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/4/ingredient/new" for ::1 at 2017-03-20 17:04:25 -0400
+Processing by RecipesController#newingredient as HTML
+  Parameters: {"recipe_id"=>"4"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/newingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (2.1ms)
+  Rendered recipes/newingredient.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 65ms (Views: 60.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/4/ingredient/new" for ::1 at 2017-03-20 17:04:45 -0400
+Processing by RecipesController#newingredient as HTML
+  Parameters: {"recipe_id"=>"4"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/newingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (6.0ms)
+  Rendered recipes/newingredient.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 89ms (Views: 84.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes" for ::1 at 2017-03-20 17:06:34 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 72ms (Views: 67.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes" for ::1 at 2017-03-20 17:06:34 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/recipes/2/edit" for ::1 at 2017-03-20 17:10:29 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (3.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (7.1ms)
+  Rendered recipes/edit.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 55ms (Views: 45.8ms | ActiveRecord: 4.1ms)
+
+
+Started PATCH "/recipes/2" for ::1 at 2017-03-20 17:10:50 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g0k04n8Zcq0w0jq+8YyPleNWEAFZCjAJt3JJVcJcO9nzIRl3aJIsnBI3mJ0payjwiwIP76wD8cKttPrgSm8BaQ==", "recipe"=>{"description"=>"wowers adfadsofn", "category_id"=>"2"}, "commit"=>"Update Recipe", "id"=>"2"}
+  [1m[36mRecipe Load (3.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "recipes" SET "description" = $1, "updated_at" = $2 WHERE "recipes"."id" = $3[0m  [["description", "wowers adfadsofn"], ["updated_at", 2017-03-20 21:10:50 UTC], ["id", 2]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/2/ingredient/edit
+Completed 302 Found in 15ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 17:10:50 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (324.7ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (327.2ms)
+Completed 500 Internal Server Error in 342ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ingredient' for #<#<Class:0x007f92141a2db0>:0x007f92115e8fa8>
+Did you mean?  ingredients
+               @ingredient):
+    1: <%= form_for(ingredient) do |f| %>
+    2:   <% if ingredient.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132703036420'
+app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredient_html_erb___3397441157071999235_70132666682600'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.6ms)
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 17:13:24 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  [1m[36mRecipe Load (6.9ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (130.3ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (132.1ms)
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 13.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `ingredient_path' for #<#<Class:0x007f92159635f8>:0x007f9215961f78>
+Did you mean?  ingredients_path):
+    1: <%= form_for(ingredient) do |f| %>
+    2:   <% if ingredient.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132690888080'
+app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredient_html_erb___3397441157071999235_70132702068800'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.7ms)
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 17:14:48 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (141.4ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (143.5ms)
+Completed 500 Internal Server Error in 156ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `ingredient_path' for #<#<Class:0x007f92159635f8>:0x007f9211504da8>
+Did you mean?  ingredients_path):
+    1: <%= form_for(ingredient) do |f| %>
+    2:   <% if ingredient.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132666174920'
+app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredient_html_erb___3397441157071999235_70132666215400'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.1ms)
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 17:16:40 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (131.5ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (134.0ms)
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `ingredient_path' for #<#<Class:0x007f92159635f8>:0x007f9214768358>
+Did you mean?  ingredients_path):
+    1: <%= form_for(@ingredient) do |f| %>
+    2:   <% if ingredient.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132703543120'
+app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredient_html_erb___3397441157071999235_70132692633280'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.8ms)
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 17:16:43 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.9ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (172.7ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (175.9ms)
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `ingredient_path' for #<#<Class:0x007f92159635f8>:0x007f921461f028>
+Did you mean?  ingredients_path):
+    1: <%= form_for(@ingredient) do |f| %>
+    2:   <% if ingredient.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132691949040'
+app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredient_html_erb___3397441157071999235_70132691959100'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.8ms)
+Started PUT "/__web_console/repl_sessions/0acb120aea611f424ba77ef8b2bd7108" for ::1 at 2017-03-20 17:17:49 -0400
+Started PUT "/__web_console/repl_sessions/0acb120aea611f424ba77ef8b2bd7108" for ::1 at 2017-03-20 17:17:50 -0400
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 17:19:54 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (2.8ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(ingredient) do |f| %>
+    2:   <% if ingredient.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132692469560'
+app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredient_html_erb___3397441157071999235_70132692841960'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.7ms)
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 17:20:24 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (2.8ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@ingredient) do |f| %>
+    2:   <% if ingredient.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+  
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132665632880'
+app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredient_html_erb___3397441157071999235_70132690563760'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.5ms)
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 17:21:00 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (6.2ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    18: 
+    19: 
+    20:   <div class="field">
+    21:     <%= f.hidden_field :recipe_id, value: recipe.id %>
+    22:   </div>
+    23: 
+    24:   <div class="actions">
+  
+app/views/recipes/_form1.html.erb:21:in `block in _app_views_recipes__form__html_erb___1386637793395279475_70132709817580'
+app/views/recipes/_form1.html.erb:1:in `_app_views_recipes__form__html_erb___1386637793395279475_70132709817580'
+app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredient_html_erb___3397441157071999235_70132666461300'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.3ms)
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 17:21:42 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (1.9ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/1" for ::1 at 2017-03-20 17:25:55 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 80ms (ActiveRecord: 67.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category with 'id'=1):
+  
+app/controllers/categories_controller.rb:70:in `set_category'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (120.7ms)
+Started GET "/2/ingredient/edit" for ::1 at 2017-03-20 17:27:46 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"2"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_editform1.html.erb (2.0ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/1" for ::1 at 2017-03-20 17:27:49 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category with 'id'=1):
+  
+app/controllers/categories_controller.rb:70:in `set_category'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.5ms)
+Started GET "/categories/" for ::1 at 2017-03-20 17:28:10 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (10.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 48ms (Views: 31.9ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/categories/2" for ::1 at 2017-03-20 17:28:13 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (15.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 110ms (Views: 51.5ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/recipes/4" for ::1 at 2017-03-20 17:28:19 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (2.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 4], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     5:   <%= @recipe.description %>
+     6: </p>
+     7: <p>Ingredients <br>
+     8: <%= @recipe.ingredient.name %>
+     9: </p>
+    10: <p> Instructions <br>
+    11: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:8:in `_app_views_recipes_show_html_erb__2561824744316213349_70132703119880'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.9ms)
+Started GET "/categories/2" for ::1 at 2017-03-20 17:28:22 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (11.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 50ms (Views: 33.8ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/recipes/4" for ::1 at 2017-03-20 17:28:23 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (2.9ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mIngredient Load (2.6ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 4], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 5.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     5:   <%= @recipe.description %>
+     6: </p>
+     7: <p>Ingredients <br>
+     8: <%= @recipe.ingredient.name %>
+     9: </p>
+    10: <p> Instructions <br>
+    11: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:8:in `_app_views_recipes_show_html_erb__2561824744316213349_70132667354780'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (32.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (230.7ms)
+Started GET "/categories/2" for ::1 at 2017-03-20 17:28:30 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (16.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 64ms (Views: 41.4ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/categories" for ::1 at 2017-03-20 17:28:45 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (26.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 79ms (Views: 46.1ms | ActiveRecord: 26.0ms)
+
+
+Started GET "/categories/new" for ::1 at 2017-03-20 17:28:46 -0400
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.9ms)
+  Rendered categories/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 55ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/categories" for ::1 at 2017-03-20 17:28:50 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vpowGVDfI7Sz/uzQ3czXvGhGnp1zceXEZKvoPgveoHXuraG+DfHuo4YwZn9aKkHJgXbiCYCJ+mL8LqLTfat4PA==", "category"=>{"description"=>"burgers"}, "commit"=>"Create Category"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "burgers"], ["created_at", 2017-03-20 21:28:50 UTC], ["updated_at", 2017-03-20 21:28:50 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/categories/5
+Completed 302 Found in 9ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/categories/5" for ::1 at 2017-03-20 17:28:50 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 5]]
+  Rendered categories/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 108ms (Views: 98.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/categories" for ::1 at 2017-03-20 17:28:52 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 51ms (Views: 47.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/categories/5" for ::1 at 2017-03-20 17:28:54 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (40.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 5]]
+  Rendered categories/show.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 106ms (Views: 57.4ms | ActiveRecord: 41.4ms)
+
+
+Started GET "/categories/5" for ::1 at 2017-03-20 17:32:32 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 5]]
+  Rendered categories/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 120ms (Views: 39.6ms | ActiveRecord: 50.1ms)
+
+
+Started GET "/categories" for ::1 at 2017-03-20 17:32:36 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (20.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 77ms (Views: 52.6ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/categories/4" for ::1 at 2017-03-20 17:32:37 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (26.9ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (1.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 66ms (Views: 32.7ms | ActiveRecord: 28.8ms)
+
+
+Started GET "/categories" for ::1 at 2017-03-20 17:32:39 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (28.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 77ms (Views: 43.2ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/categories/2" for ::1 at 2017-03-20 17:32:40 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 124ms (Views: 79.2ms | ActiveRecord: 38.9ms)
+
+
+Started GET "/categories" for ::1 at 2017-03-20 17:32:42 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (20.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 70ms (Views: 46.7ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/categories/5" for ::1 at 2017-03-20 17:32:44 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCategory Load (2.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (21.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 5]]
+  Rendered categories/show.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 90ms (Views: 53.8ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/categories" for ::1 at 2017-03-20 17:32:45 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 95ms (Views: 91.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/categories/1" for ::1 at 2017-03-20 17:32:52 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category with 'id'=1):
+  
+app/controllers/categories_controller.rb:70:in `set_category'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.4ms)
+Started GET "/categories" for ::1 at 2017-03-20 17:32:56 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories/4" for ::1 at 2017-03-20 17:32:58 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (1.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 55ms (Views: 48.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/categories/2" for ::1 at 2017-03-20 17:33:15 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (23.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 74ms (Views: 44.0ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/recipes/4/edit" for ::1 at 2017-03-20 17:33:17 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (24.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (29.4ms)
+  Rendered recipes/edit.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 70ms (Views: 40.7ms | ActiveRecord: 24.8ms)
+
+
+Started PATCH "/recipes/4" for ::1 at 2017-03-20 17:33:18 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bj7eeadDqNT+0XcBuE0IGEvg9tOl/hTbHnC7B4xWl38/oBpjrhcfxRtm+Ik4bEJrvGIrfd7/GrJrlSbJKxDEPg==", "recipe"=>{"description"=>"lgkbmn ", "category_id"=>"2"}, "commit"=>"Update Recipe", "id"=>"4"}
+  [1m[36mRecipe Load (36.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (6.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (2.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/4/ingredient/edit
+Completed 302 Found in 55ms (ActiveRecord: 45.4ms)
+
+
+Started GET "/4/ingredient/edit" for ::1 at 2017-03-20 17:33:18 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"4"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_editform1.html.erb (5.2ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 84ms (Views: 54.9ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/recipes" for ::1 at 2017-03-20 17:33:20 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 49ms (Views: 44.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes/4/edit" for ::1 at 2017-03-20 17:33:23 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (5.5ms)
+  Rendered recipes/edit.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 45ms (Views: 39.3ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/recipes/4" for ::1 at 2017-03-20 17:33:31 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4xGs0zVHKeu6oQjIsJt+9ryN29Y01I87ZGcVL4kQsDuyj2jJPBOe+l8Wh0AwujSFSw8GeE/VgVIRgojhLlbjeg==", "recipe"=>{"description"=>"hot dog\r\n", "category_id"=>"5"}, "commit"=>"Update Recipe", "id"=>"4"}
+  [1m[36mRecipe Load (3.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (2.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (2.2ms)[0m  [1m[33mUPDATE "recipes" SET "description" = $1, "category_id" = $2, "updated_at" = $3 WHERE "recipes"."id" = $4[0m  [["description", "hot dog\r\n"], ["category_id", 5], ["updated_at", 2017-03-20 21:33:31 UTC], ["id", 4]]
+  [1m[35m (80.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/4/ingredient/edit
+Completed 302 Found in 99ms (ActiveRecord: 88.5ms)
+
+
+Started GET "/4/ingredient/edit" for ::1 at 2017-03-20 17:33:31 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"4"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_editform1.html.erb (1.8ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ingredients" for ::1 at 2017-03-20 17:33:39 -0400
+Processing by RecipesController#create_ingredient as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O54g+mKrHrf1ZSJCigLCeuJqvwFtCvujVty6/v24aje0qT+bHLbtW521CuocRTUGpDTepqd3nlVo/+S1hRnZ3g==", "ingredient"=>{"name"=>"edit this shit"}, "commit"=>"Create Ingredient"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=):
+  
+app/controllers/recipes_controller.rb:76:in `create_ingredient'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (141.4ms)
+Started GET "/4/ingredient/edit" for ::1 at 2017-03-20 17:34:40 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"4"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_editform1.html.erb (2.6ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/4/ingredient/edit" for ::1 at 2017-03-20 17:34:44 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"4"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_editform1.html.erb (3.0ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 50ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/4/ingredient/edit" for ::1 at 2017-03-20 17:35:42 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"4"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_editform1.html.erb (2.1ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/4/ingredient/edit" for ::1 at 2017-03-20 17:36:08 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"4"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_editform1.html.erb (2.5ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2017-03-20 17:36:13 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/4/edit" for ::1 at 2017-03-20 17:36:22 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (23.9ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (5.5ms)
+  Rendered recipes/edit.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 68ms (Views: 40.1ms | ActiveRecord: 24.4ms)
+
+
+Started PATCH "/recipes/4" for ::1 at 2017-03-20 17:36:23 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o03uuGHzyXxEuWEZB5EZCcvYN6jS97As1yEF3RwyoI/y0yqiaKd+baEO7pGHsFN6PFrqBqn2vkWixJgTu3Tzzg==", "recipe"=>{"description"=>"hot dog\r\n", "category_id"=>"2"}, "commit"=>"Update Recipe", "id"=>"4"}
+  [1m[36mRecipe Load (6.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "recipes" SET "category_id" = $1, "updated_at" = $2 WHERE "recipes"."id" = $3[0m  [["category_id", 2], ["updated_at", 2017-03-20 21:36:23 UTC], ["id", 4]]
+  [1m[35m (26.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/4/ingredient/edit
+Completed 302 Found in 43ms (ActiveRecord: 34.5ms)
+
+
+Started GET "/4/ingredient/edit" for ::1 at 2017-03-20 17:36:23 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"4"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_editform1.html.erb (4.1ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 44ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2017-03-20 17:36:30 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (3.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 94ms (Views: 87.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/recipes/4" for ::1 at 2017-03-20 17:36:32 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mIngredient Load (22.6ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 4], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (34.3ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 23.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     5:   <%= @recipe.description %>
+     6: </p>
+     7: <p>Ingredients <br>
+     8: <%= @recipe.ingredient.name %>
+     9: </p>
+    10: <p> Instructions <br>
+    11: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:8:in `_app_views_recipes_show_html_erb__2561824744316213349_70132675070100'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.1ms)
+Started GET "/recipes" for ::1 at 2017-03-20 17:37:07 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (9.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 53ms (Views: 40.4ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/recipes/4" for ::1 at 2017-03-20 17:37:11 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mIngredient Load (2.1ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 4], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     5:   <%= @recipe.description %>
+     6: </p>
+     7: <p>Ingredients <br>
+     8: <%= @recipe.ingredient.name %>
+     9: </p>
+    10: <p> Instructions <br>
+    11: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:8:in `_app_views_recipes_show_html_erb__2561824744316213349_70132666075680'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.2ms)
+Started GET "/recipes" for ::1 at 2017-03-20 17:37:14 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/2" for ::1 at 2017-03-20 17:37:16 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mIngredient Load (27.7ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mInstruction Load (0.4ms)[0m  [1m[34mSELECT  "instructions".* FROM "instructions" WHERE "instructions"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (92.9ms)
+Completed 200 OK in 134ms (Views: 64.0ms | ActiveRecord: 63.7ms)
+
+
+Started DELETE "/recipes/4" for ::1 at 2017-03-20 17:37:20 -0400
+Processing by RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"c27ZEcpt/zOEdSFvSxwI6HB9LIlgtAHebzMzmmCsBOj8WcZwtHAM3+ylCcfdW/+UNiNNLqrJZChREG3RGA23AQ==", "id"=>"4"}
+  [1m[36mRecipe Load (4.0ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInstruction Load (0.6ms)[0m  [1m[34mSELECT  "instructions".* FROM "instructions" WHERE "instructions"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 4], ["LIMIT", 1]]
+  [1m[36mIngredient Load (39.8ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (3.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 4]]
+  [1m[35m (50.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 109ms (ActiveRecord: 99.2ms)
+
+
+Started GET "/recipes" for ::1 at 2017-03-20 17:37:20 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (5.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 56ms (Views: 47.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 17:37:22 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (4.7ms)
+  Rendered recipes/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 41ms (Views: 35.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/recipes" for ::1 at 2017-03-20 17:37:26 -0400
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YLVgduwZ15UFGcGVQwOLLYJS+Ti9oUDlOWtHR830Q6p2N2O8LCA4GrZVSn8ANtLrlp78pM5hrkatvCeMjUOCnA==", "recipe"=>{"description"=>"kjndlkf\r\n", "category_id"=>"2"}, "commit"=>"Create Recipe"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "kjndlkf\r\n"], ["created_at", 2017-03-20 21:37:26 UTC], ["updated_at", 2017-03-20 21:37:26 UTC], ["category_id", 2]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/5/ingredient/new
+Completed 302 Found in 10ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/5/ingredient/new" for ::1 at 2017-03-20 17:37:26 -0400
+Processing by RecipesController#newingredient as HTML
+  Parameters: {"recipe_id"=>"5"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering recipes/newingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (4.5ms)
+  Rendered recipes/newingredient.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 36ms (Views: 31.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/ingredients" for ::1 at 2017-03-20 17:37:28 -0400
+Processing by RecipesController#create_ingredient as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LY/2LAYbsYRv878u9/K+O400TUYjXcJhPr+MmEtRwQKiuOlNeAZCaAcjl4ZhtUlHy2os4ekgp5cAnNLTM/By6w==", "ingredient"=>{"name"=>"sdfgsdfg", "recipe_id"=>"5"}, "commit"=>"Create Ingredient"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "sdfgsdfg"], ["created_at", 2017-03-20 21:37:28 UTC], ["updated_at", 2017-03-20 21:37:28 UTC], ["recipe_id", 5]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/5/instruction/new
+Completed 302 Found in 14ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/5/instruction/new" for ::1 at 2017-03-20 17:37:28 -0400
+Processing by RecipesController#newinstruction as HTML
+  Parameters: {"recipe_id"=>"5"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering recipes/newinstruction.html.erb within layouts/application
+  Rendered recipes/_form2.html.erb (3.7ms)
+  Rendered recipes/newinstruction.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 61ms (Views: 56.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/instructions" for ::1 at 2017-03-20 17:37:29 -0400
+Processing by RecipesController#create_instruction as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FiGhHxbfAUTaY9CSmGtONrJXYj0JpxZNv/UnjXvYEp2ZFr5+aMLyqLKz+DoOLLlK9AkDmsPac7uB1nnGA3mhdA==", "instruction"=>{"step"=>"sdfgsdfg", "recipe_id"=>"5"}, "commit"=>"Create Instruction"}
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (25.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (6.4ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "sdfgsdfg"], ["created_at", 2017-03-20 21:37:29 UTC], ["updated_at", 2017-03-20 21:37:29 UTC], ["recipe_id", 5]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/5
+Completed 302 Found in 44ms (ActiveRecord: 34.2ms)
+
+
+Started GET "/recipes/5" for ::1 at 2017-03-20 17:37:29 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRecipe Load (27.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 5], ["LIMIT", 1]]
+  [1m[36mInstruction Load (0.8ms)[0m  [1m[34mSELECT  "instructions".* FROM "instructions" WHERE "instructions"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 5], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 88ms (Views: 54.9ms | ActiveRecord: 28.6ms)
+
+
+Started GET "/recipes/5/edit" for ::1 at 2017-03-20 17:37:31 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (4.4ms)
+  Rendered recipes/edit.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 42ms (Views: 37.3ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/recipes/5" for ::1 at 2017-03-20 17:37:33 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t/VUGcd0GiyPn/ENn1ZpEDgCKf9TwtpYTiB17VOyggelHPl75neELsWjam69U8ZUjo/Qbo9YZR8jU0+eWt1lXw==", "recipe"=>{"description"=>"kjndlkfsdfgsdfg\r\n", "category_id"=>"2"}, "commit"=>"Update Recipe", "id"=>"5"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (8.2ms)[0m  [1m[33mUPDATE "recipes" SET "description" = $1, "updated_at" = $2 WHERE "recipes"."id" = $3[0m  [["description", "kjndlkfsdfgsdfg\r\n"], ["updated_at", 2017-03-20 21:37:33 UTC], ["id", 5]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/5/ingredient/edit
+Completed 302 Found in 21ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/5/ingredient/edit" for ::1 at 2017-03-20 17:37:33 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"5"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_editform1.html.erb (2.3ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ingredients" for ::1 at 2017-03-20 17:37:43 -0400
+Processing by RecipesController#create_ingredient as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MOb3jdNpdc12iFIkMVYOWIDYZX57kMZ1M2jRWNS5vmC/0ejsrXSGIR5YeoynEfkkxoYE2bHto4MNS48TrBgNiQ==", "ingredient"=>{"name"=>"oijkbwkfkewnf"}, "commit"=>"Create Ingredient"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=):
+  
+app/controllers/recipes_controller.rb:76:in `create_ingredient'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (104.9ms)
+Started GET "/recipes" for ::1 at 2017-03-20 17:39:04 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 29.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 17:39:05 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (5.2ms)
+  Rendered recipes/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 47ms (Views: 43.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/recipes" for ::1 at 2017-03-20 17:39:07 -0400
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s0lLAnTqYr6Kapjcg+dONkvYJ9kn58DZvMIBI6ixnRmly0jItNONMTkmEzbA0hfwXxQiRVQnLnooFWHo6AZcLw==", "recipe"=>{"description"=>"", "category_id"=>"2"}, "commit"=>"Create Recipe"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", ""], ["created_at", 2017-03-20 21:39:07 UTC], ["updated_at", 2017-03-20 21:39:07 UTC], ["category_id", 2]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/6/ingredient/new
+Completed 302 Found in 9ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/6/ingredient/new" for ::1 at 2017-03-20 17:39:07 -0400
+Processing by RecipesController#newingredient as HTML
+  Parameters: {"recipe_id"=>"6"}
+  [1m[36mRecipe Load (10.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/newingredient.html.erb within layouts/application
+  Rendered recipes/_form1.html.erb (3.1ms)
+  Rendered recipes/newingredient.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 53ms (Views: 37.1ms | ActiveRecord: 10.3ms)
+
+
+Started POST "/ingredients" for ::1 at 2017-03-20 17:39:08 -0400
+Processing by RecipesController#create_ingredient as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3m+omQi/9dwkeHGBQbQt20pT4oaV9V/gzba5GIEhjKZRWLf4dqIGMEyoWSnX89qnDA2DIV+IOhbzledT+YA/Tw==", "ingredient"=>{"name"=>"", "recipe_id"=>"6"}, "commit"=>"Create Ingredient"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", ""], ["created_at", 2017-03-20 21:39:08 UTC], ["updated_at", 2017-03-20 21:39:08 UTC], ["recipe_id", 6]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/6/instruction/new
+Completed 302 Found in 11ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/6/instruction/new" for ::1 at 2017-03-20 17:39:08 -0400
+Processing by RecipesController#newinstruction as HTML
+  Parameters: {"recipe_id"=>"6"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/newinstruction.html.erb within layouts/application
+  Rendered recipes/_form2.html.erb (2.3ms)
+  Rendered recipes/newinstruction.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/instructions" for ::1 at 2017-03-20 17:39:09 -0400
+Processing by RecipesController#create_instruction as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R6ZigSbmjYvHFdWMtYhfLJYP+4SzjIhQ1DAaRlevWcDIkX3gWPt+Z6/F/SQjz6hQ0FGaI3nx7abqE0QNLw7qKQ==", "instruction"=>{"step"=>"", "recipe_id"=>"6"}, "commit"=>"Create Instruction"}
+  [1m[36mRecipe Load (24.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (2.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", ""], ["created_at", 2017-03-20 21:39:09 UTC], ["updated_at", 2017-03-20 21:39:09 UTC], ["recipe_id", 6]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/6
+Completed 302 Found in 39ms (ActiveRecord: 31.1ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-03-20 17:39:09 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mIngredient Load (18.8ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mInstruction Load (1.6ms)[0m  [1m[34mSELECT  "instructions".* FROM "instructions" WHERE "instructions"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 6], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 56ms (Views: 32.4ms | ActiveRecord: 20.8ms)
+
+
+Started GET "/recipes" for ::1 at 2017-03-20 17:39:11 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (11.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 50ms (Views: 35.4ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/recipes/6/edit" for ::1 at 2017-03-20 17:39:13 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (4.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (8.7ms)
+  Rendered recipes/edit.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 54ms (Views: 44.4ms | ActiveRecord: 5.7ms)
+
+
+Started PATCH "/recipes/6" for ::1 at 2017-03-20 17:39:16 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xq9GFeVLqx6acWZGRuPho+vAXXVT5OTbWSHdZhap27gSL/xCaSr3K2pbb79KVVc1GJFXyoLe1qGxju9OUiFMxQ==", "recipe"=>{"description"=>"wefqwef", "category_id"=>"2"}, "commit"=>"Update Recipe", "id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "recipes" SET "description" = $1, "updated_at" = $2 WHERE "recipes"."id" = $3[0m  [["description", "wefqwef"], ["updated_at", 2017-03-20 21:39:16 UTC], ["id", 6]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/6/ingredient/edit
+Completed 302 Found in 12ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/6/ingredient/edit" for ::1 at 2017-03-20 17:39:16 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"6"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_editform1.html.erb (2.7ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 48ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ingredients" for ::1 at 2017-03-20 17:39:18 -0400
+Processing by RecipesController#create_ingredient as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s2z+VCfoC/3BskgBI4+Mm5FXVwrg/46x8LMX8vrXXL88W+E1WfX4EaliYKm1yHvn1wk2rSqC60fOkEm5gnbvVg==", "ingredient"=>{"name"=>"efqwef"}, "commit"=>"Create Ingredient"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=):
+  
+app/controllers/recipes_controller.rb:76:in `create_ingredient'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (107.6ms)
+Started GET "/recipes" for ::1 at 2017-03-20 17:53:56 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (2.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 72ms (Views: 63.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 17:53:57 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (7.0ms)
+  Rendered recipes/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 48ms (Views: 41.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 17:56:12 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (313.1ms)
+  Rendered recipes/new.html.erb within layouts/application (315.5ms)
+Completed 500 Internal Server Error in 324ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `food' for #<#<Class:0x007f9215f2f810>:0x007f9215c803f8>):
+    19: 
+    20:   <div class="field">
+    21:     <%= f.label :category_id %>
+    22:     <%= f.select :category_id, options_for_select(food, drink, nah) %>
+    23:     </div>
+    24: 
+    25:   <div class="actions">
+  
+app/views/recipes/_form.html.erb:22:in `block in _app_views_recipes__form_html_erb__64094225990194893_70132667225220'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb__64094225990194893_70132667225220'
+app/views/recipes/new.html.erb:3:in `_app_views_recipes_new_html_erb___1310088815558556462_70132703692080'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (105.5ms)
+Started GET "/recipes/new" for ::1 at 2017-03-20 17:56:24 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (4.9ms)
+  Rendered recipes/new.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    19: 
+    20:   <div class="field">
+    21:     <%= f.label :category_id %>
+    22:     <%= f.select :category_id, options_for_select("food", "drink", "nah") %>
+    23:     </div>
+    24: 
+    25:   <div class="actions">
+  
+app/views/recipes/_form.html.erb:22:in `block in _app_views_recipes__form_html_erb__64094225990194893_70132663490580'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb__64094225990194893_70132663490580'
+app/views/recipes/new.html.erb:3:in `_app_views_recipes_new_html_erb___1310088815558556462_70132701417020'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.7ms)
+Started GET "/recipes/new" for ::1 at 2017-03-20 17:56:37 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (2.5ms)
+  Rendered recipes/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 53ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for ::1 at 2017-03-20 17:56:49 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (9.6ms)
+  Rendered recipes/new.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for 1:Integer
+Did you mean?  tap):
+    19: 
+    20:   <div class="field">
+    21:     <%= f.label :category_id %>
+    22:     <%= f.select :category_id, options_for_select(1,2) %>
+    23:     </div>
+    24: 
+    25:   <div class="actions">
+  
+app/views/recipes/_form.html.erb:22:in `block in _app_views_recipes__form_html_erb__64094225990194893_70132702043800'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb__64094225990194893_70132702043800'
+app/views/recipes/new.html.erb:3:in `_app_views_recipes_new_html_erb___1310088815558556462_70132702105920'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (119.3ms)
+Started GET "/recipes/new" for ::1 at 2017-03-20 18:01:12 -0400
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mCategory Load (15.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (20.2ms)
+  Rendered recipes/new.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 59ms (Views: 40.2ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/recipes/" for ::1 at 2017-03-20 18:01:16 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (2.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 37ms (Views: 30.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/recipes/6/edit" for ::1 at 2017-03-20 18:01:19 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (24.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (3.7ms)
+  Rendered recipes/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 63ms (Views: 34.7ms | ActiveRecord: 24.7ms)
+
+
+Started PATCH "/recipes/6" for ::1 at 2017-03-20 18:01:21 -0400
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fmef0Zd9Ey+oAq5SahGYCkz6+4rfetPAAz9LKdL6AEyq5yWGGxxPGlgop6tmpy6cv6vxNQ5A4brrkHkBlnKXMQ==", "recipe"=>{"description"=>"wefqwefadf", "category_id"=>"2"}, "commit"=>"Update Recipe", "id"=>"6"}
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "recipes" SET "description" = $1, "updated_at" = $2 WHERE "recipes"."id" = $3[0m  [["description", "wefqwefadf"], ["updated_at", 2017-03-20 22:01:21 UTC], ["id", 6]]
+  [1m[35m (86.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/6/ingredient/edit
+Completed 302 Found in 99ms (ActiveRecord: 89.6ms)
+
+
+Started GET "/6/ingredient/edit" for ::1 at 2017-03-20 18:01:21 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"6"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_editform1.html.erb (2.4ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 56ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ingredients" for ::1 at 2017-03-20 18:01:23 -0400
+Processing by RecipesController#create_ingredient as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"THgKvbqPIwj3BIOdvHS5EE/CiQUqLEcFaVjaYMFi5+jDTxXcxJLQ5J/UqzUqM05sCZzoouBRIvNXe4QrucNUAQ==", "ingredient"=>{"name"=>"asdfasdf"}, "commit"=>"Create Ingredient"}
+  [1m[36mRecipe Load (7.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 10ms (ActiveRecord: 7.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=):
+  
+app/controllers/recipes_controller.rb:76:in `create_ingredient'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.4ms)
+Started GET "/6/ingredient/edit" for ::1 at 2017-03-20 18:05:26 -0400
+Processing by RecipesController#editingredient as HTML
+  Parameters: {"recipe_id"=>"6"}
+  Rendering recipes/editingredient.html.erb within layouts/application
+  Rendered recipes/_editform1.html.erb (2.1ms)
+  Rendered recipes/editingredient.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/2" for ::1 at 2017-03-20 18:05:28 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (25.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 67ms (Views: 34.8ms | ActiveRecord: 26.2ms)
+
+
+Started GET "/categories/3" for ::1 at 2017-03-20 18:05:32 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category with 'id'=3):
+  
+app/controllers/categories_controller.rb:70:in `set_category'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.8ms)
+Started GET "/categories/2" for ::1 at 2017-03-20 18:05:34 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 40ms (Views: 33.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/recipes/5/edit" for ::1 at 2017-03-20 18:05:41 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRecipe Load (2.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mCategory Load (23.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered recipes/_form.html.erb (30.0ms)
+  Rendered recipes/edit.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 69ms (Views: 35.8ms | ActiveRecord: 26.3ms)
+
+

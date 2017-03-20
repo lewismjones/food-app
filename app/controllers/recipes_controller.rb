@@ -37,10 +37,14 @@ before_action :set_recipe, only: [:show, :edit, :update, :destroy]
   end
 
   def editingredient
-    @recipe = Recipe.find(params[:recipe_id])
-    @ingredient = @recipe.ingredient
-    puts "************"
-    puts @recipe.ingredient
+    # @recipe = Recipe.find(params[:recipe_id])
+    #
+    # @ingredient = @recipe.ingredient
+    # puts "************"
+    #   p @recipe
+    #   p @ingredient
+    # puts @recipe.ingredient
+    @ingredient = Ingredient.new
 
   end
 
@@ -137,12 +141,6 @@ end
     # Use callbacks to share common setup or constraints between actions.
     def set_recipe
       @recipe = Recipe.find(params[:id])
-    end
-    def set_ingredient
-      @ingredient = Ingredient.find_by(recipe_id: @recipe.id)
-    end
-    def set_instruction
-      @instruction = Instruction.find_by(recipe_id: @recipe.id)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
