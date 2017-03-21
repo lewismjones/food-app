@@ -3,7 +3,9 @@
   They will automatically be included in application.css.
 */
 
-#Beef {background-image: url("http://i64.tinypic.com/2e5v1vn.jpg"); height: 100em;}
+.categoriesshow {height: 100em; color: white; font-size: 20px; transform: translate(-50%, -50%); margin: auto; }
+
+#Beef {background-image: url("http://i64.tinypic.com/2e5v1vn.jpg"); }
 
 #Poultry {background-image: url("http://i65.tinypic.com/33m8jzo.jpg");}
 
