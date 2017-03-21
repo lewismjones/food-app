@@ -10,6 +10,9 @@ post '/ingredients/' => 'recipes#create_ingredient'
 get '/:recipe_id/instruction/new' => 'recipes#newinstruction', as: 'new_instruction'
 post '/instructions/' => 'recipes#create_instruction'
 
+get '/:recipe_id/image/new' => 'recipes#newimage', as: 'new_image'
+post '/images/' => 'recipes#create_image'
+
 get '/:recipe_id/ingredient/edit' => 'recipes#editingredient', as: 'edit_ingredient'
 patch '/ingredients/' => 'recipes#update_ingredient'
 

@@ -28,6 +28,11 @@ before_action :set_recipe, only: [:show, :edit, :update, :destroy]
     @recipe = Recipe.find(params[:recipe_id])
   end
 
+  def newimage
+    @image = Image.new
+    @recipe = Recipe.find(params[:recipe_id])
+  end
+
 
 
 
@@ -85,6 +90,16 @@ def create_instruction
   @instruction = Instruction.new(instruction_params)
   @recipe = Recipe.find(params[:instruction][:recipe_id])
   if @instruction.save!
+    redirect_to new_image_path(@recipe)
+  else
+    render :new
+  end
+end
+
+def create_image
+  @image = Image.new(instruction_params)
+  @recipe = Recipe.find(params[:instruction][:recipe_id])
+  if @image.save!
     redirect_to @recipe
   else
     render :new
