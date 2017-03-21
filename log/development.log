@@ -5394,3 +5394,5 @@ app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredien
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5414788180524291870)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m

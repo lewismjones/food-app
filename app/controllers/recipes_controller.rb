@@ -171,7 +171,7 @@ end
       params.require(:instruction).permit(:step, :recipe_id)
     end
     def image_params
-      params.require(:image).permit(:step, :recipe_id)
+      params.require(:image).permit(:image_url, :recipe_id)
     end
 
 end
