@@ -97,8 +97,8 @@ def create_instruction
 end
 
 def create_image
-  @image = Image.new(instruction_params)
-  @recipe = Recipe.find(params[:instruction][:recipe_id])
+  @image = Image.new(image_params)
+  @recipe = Recipe.find(params[:image][:recipe_id])
   if @image.save!
     redirect_to @recipe
   else
@@ -169,6 +169,9 @@ end
 
     def instruction_params
       params.require(:instruction).permit(:step, :recipe_id)
+    end
+    def image_params
+      params.require(:image).permit(:step, :recipe_id)
     end
 
 end
