@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :categories
   resources :recipes
 
+  root 'category#index'
+
 get '/:recipe_id/ingredient/new' => 'recipes#newingredient', as: 'new_ingredient'
 post '/ingredients/' => 'recipes#create_ingredient'
 

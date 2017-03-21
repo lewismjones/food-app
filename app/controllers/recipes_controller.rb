@@ -44,13 +44,13 @@ before_action :set_recipe, only: [:show, :edit, :update, :destroy]
     #   p @recipe
     #   p @ingredient
     # puts @recipe.ingredient
-    @ingredient = Ingredient.new
+    @ingredient = Ingredient.find(params[:recipe_id])
 
   end
 
   def editinstruction
     @recipe = Recipe.find(params[:recipe_id])
-    @instruction = @recipe.instruction
+    @instruction = Instruction.find params[:recipe_id]
 
   end
 
