@@ -1,6 +1,11 @@
-<h1>Editing Image</h1>
 
-<%= render 'editform3', image: @image, recipe: @recipe %>
 
-<%= link_to 'Show', @recipe %> |
-<%= link_to 'Back', recipes_path %>
+
+<div class="newrecipe" id="background">
+<span id="the-table-recipe2" style=color:white;>
+  <h1>Editing Image</h1>
+  <%= render 'editform3', image: @image, recipe: @recipe %>
+  <%= link_to 'Show', @recipe %> |
+  <%= link_to 'Back', recipes_path %>
+</span>
+</div>

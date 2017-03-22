@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
-before_action :set_recipe, only: [:show, :destroy, :update, :update_ingredient, :update_instruction, :update_image, :new_ingredient]
-before_action :set_edit_recipe, only: []
+before_action :set_recipe, only: [:show, :destroy, :update]
+before_action :set_edit_recipe, only: [:update_ingredient, :update_instruction, :update_image ]
 
   # GET /recipes
   # GET /recipes.json
@@ -129,22 +129,20 @@ end
   end
 
 def update_instruction
-  @instruction = Instruction.find_by(instruction_params)
-  @recipe = Recipe.find(params[:instruction][:recipe_id])
-  if @instruction.save!
+  @instruction = @recipe.instruction
+  if @instruction.update(instruction_params)
     redirect_to update_image_path(@recipe)
   else
-    render :new
+    # render :new
   end
 end
 
 def update_image
-  @image = Image.find_by(image_params)
-  @recipe = Recipe.find(params[:image][:recipe_id])
-  if @image.save!
-    redirect_to @recipe
+  @image = @recipe.image
+  if @image.update(image_params)
+    redirect_to Category.find(@recipe.category_id)
   else
-    render :new
+    # render :new
   end
 end
 
@@ -156,7 +154,7 @@ end
     @category = Category.find(@recipe.category_id)
     @recipe.destroy
     respond_to do |format|
-      format.html { redirect_to @category, notice: 'Recipe was successfully destroyed.' }
+      format.html { redirect_to @category }
       format.json { head :no_content }
     end
   end
