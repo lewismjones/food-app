@@ -6448,3 +6448,502 @@ app/views/recipes/editingredient.html.erb:3:in `_app_views_recipes_editingredien
   Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (13.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Beef"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC]]
+  [1m[35m (53.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (24.9ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Poultry"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Seafood"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Vegetarian"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (21.1ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 5], ["image_url", "http://i63.tinypic.com/51ugxk.jpg"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 4], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 9], ["image_url", "http://i63.tinypic.com/330hgde.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 8], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 10], ["image_url", "http://i67.tinypic.com/1zw0qz5.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (25.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 11], ["image_url", "http://i63.tinypic.com/29gfwr8.jpg"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 12], ["image_url", "http://i63.tinypic.com/2vnmdkm.jpg"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 14], ["image_url", "http://i64.tinypic.com/9qv1xt.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 15], ["image_url", "http://i65.tinypic.com/1zebl2s.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (25.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 3], ["image_url", "http://i67.tinypic.com/2mfnt04.jpg"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 13], ["image_url", "http://i63.tinypic.com/mimk5d.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 6], ["image_url", "http://i63.tinypic.com/fvw6rl.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Ny steak\r\narugula\r\nfeta cheese\r\nsalt\r\npepper\r\nbalsamic vinegar or some vinegar\r\nolive oil\r\nthyme\r\n4 figs halfed"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 3]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Filet mignon\r\nSalt\r\npepper\r\nRosemary\r\nSpinach\r\nolive oil\r\ngarlic"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "3/4 pound beef round steak, cut into 1/8-inch thick strips\r\nSoy sauce\r\nOyster sauce \r\nBlack bean sauce optional\r\nsalt \r\npepper\r\ngarlic\r\n1/2 broccoli\r\n1/2 teaspoon \r\nOlive oil"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 5]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (24.9ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nolive oil\r\nsalt\r\npepper\r\nthyme\r\nyougurt 2 spoons\r\nbibb lettuce"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 6]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nsalt\r\npepper\r\ncoconut milk\r\nlemongrass optional\r\ngarlic\r\nbasmati rice\r\nolive oil"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast or half a chicken with bone\r\nsal pepper\r\nparsley white onion chopped very small\r\nolive oil\r\ncider vinegar or red vinegar\r\ngarlic\r\nChili flakes optional"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 salmon filet\r\nsalt pepper\r\nDijon mustard \r\nparsley\r\nhericot vert or green beans"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 10]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1filet ofCod\r\nsal pepper, \r\ngarlic \r\ntomato sauce \"pomi\" or your choice or fresh roma tomatos\r\nbrown sugar\r\nbutter\r\ndry oregano"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 11]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (24.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1/2 a pound of shrimp\r\ngarlic\r\nparsley\r\ntarragon\r\nchilly flakes\r\nlemon and lemon zest\r\nwhite whine or vermouth\r\nsalt pepper\r\nolive oil"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 12]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 cup of quinoa\r\nbaby arugula\r\nfeta cheese \r\ngrapes\r\n1 pear\r\n1/4 of a pound of walnuts\r\nred onion\r\nmustard \r\nvinagre "], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 13]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "A bunch of green asparagus\r\ncherry tomatos\r\nolive oil\r\nrice vinegare\r\nsalt pepper\r\n2 eggs"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 14]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1/2 box of pasta : spaguetti, linguini your choise\"\r\ngrape tomatos \"your choise\"\r\ngarlic\r\nparsley\r\nedamame\r\n4 asparagus spears\r\nchives\r\npecorino cheese\r\ngoat cheese and little bit of 1/2 and 1/2 or milk"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 15]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt pepper thyme both sides\r\nPan fried or grill medium temperature\r\nIn a bowl mix the olive oil and balsamic\r\nToss the arugula and the cheese\r\nWhen the steak is ready cut alongside\r\nadd the figs\r\nPut on top and enjoy!"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 3]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt, pepper, and rosemary\r\nHeat the olive oil in mediun heat\r\nAdd the filet mignon to the pan and pan fried for 8 min per side\r\nIn a pot heat a little olive oil medium high sautee the garlic \r\nAdd the spinach tos for half a minute and serve with the filet mignon\r\nenjoy!"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "In a bowl add the beef the salt, pepper, corn starch\r\nHeat the frying pan with olive oil mediun heat\r\nAdd the beef fried 3 minutes and add the sauces \r\n\r\nAdd the garlic\r\naAdd the broccoli for 3 more minutes \r\nenjoy"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 5]]
+  [1m[35m (26.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt, pepper, thyme to the breast\r\nPan fried or grilled the breast for 6 min per side\r\nIn a Bowl add the yougurt salt pepper and a little olive oil\r\nin a plate add the lettuce the chicken all ready cuted and drizzle the yougurt sauce\r\nenjoy"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 6]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add the salt pepper to the chicken\r\nIn a semi deep pot add a little olive oil and the garlic medium heat for 2 minutes\r\nAfter that add the coconut milk salt lemongrass medium heat\r\nAdd the chicken to the coconut milk for 6 minutes.\r\nIn another pot add the rice all readfy washes in water to the pot with double amount of water\r\nSimmer  for around 18 min  \r\nEnsamble your plate and enjoy"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt and pepper to the chicken \r\npreferibly for more flavor grill it but you can pan fried \r\nwith just breast 6 min per side, for chicken with a bone aprox  8 min per side\r\nin the mind time make the sauce with the choped garlic, choped parsley \r\nchoperd onion, add the chili flakes the olive oil and the vinegar 1?2 a cup of vinegar and 1/2 a cup\r\nof olive oil\r\nWhen the chiken is ready add the suce on top and enjoy"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add to the salmon salt pepper and the dijon\r\npre heat the oven 400 degrees F\r\nplace the salmon on a rack on a trey\r\nbaked for 14 minutes\r\nin the mind time boil the hericot vert for 5 min and take them out  and put in to cold water\r\nadd a little bit of olive oil salt add the salmon to the plate and enjoy!"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 10]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Take the cod and add salt pepper \r\nin a frying pan with a lid add the garlic with a little olive oil\r\nsauteed for 2 min medium heat\r\nadd the tomato sauce to the pan, cover all the  filet with the sauce\r\nadd a teaspoon of sugar, add the oregano and the butter\r\nand cook for 6 minutes with the lid on\r\nset up your plate with a little bit of leftover rice or pasta, your choice and enjoy!"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 11]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (25.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt pepper and chilli flakes to the shrimp \r\nsauteed the shrimp for 3 to 4 minutes untill are red \"do not over cook\"\r\nset aside the shrimp \r\nadd to the pan a 1/2 a cup of wine or vermouth to deglace the pan\r\ncook medium heat until all the alcohol evaporates\r\nadd the lemon juice of 1 lemon and the lemon zest\r\nreduce for 2 munutes \r\nadd the shrimp dd the choped a small bunch parsley and the choped tarragon \"4 leaves\"\r\nmix well and ready! you can add pasta or rice if you want \r\nEnjoy!"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 12]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Cook 1 cup of quinoa with 2 cups of water or vegetal broth for 18 minutes\r\nlet it cold\r\nonce is cold add the arugula\r\nthe feta, the choped half onion the grapes the pear sliced\r\nthe walnuts, and the vinaigrette "], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 13]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Shave a good amount of asparagus in a mandolin or by hand\r\npan fryed with a little olve oil\r\nadd the cherry tomatos for 1 to 2 minutes always tossing with a tongs\r\nonce is ready add a little bit of rice vinegar salt and pepper\r\nadd to a nice plate and fry the eggs suny side up or optional \"soft or hard boiled eggs\"\r\nenjoy!"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 14]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Cook the pasta in a big pot for 8 min or follow the instructions\r\nonce cook set aside with olive oil and toss well\r\nin the meantime in a frying pan add olive oil, garlic and cook for 2 to 3 minutes\r\nadd the tomatos,  and the small choiped asparagus\r\nadd the edemame\r\nand cook for 3 min\r\nin a cup add three spoons of goat cheese and disolve with a little bit of the half and half half a cup\r\nadd pepper, you don't want to liquid.\r\nin a bowl toss the pasta with this mixture serve in a plate add pecorino and enjoy"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["recipe_id", 15]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Rosemary steak with sauteed spinach"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["category_id", 1]]
+  [1m[35m (25.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", " Chinesse style beef with broccoli"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["category_id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Thai style chicken with basmati rice"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["category_id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Grilled chicken with passley chutney"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["category_id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Roasted salmon with parsley dijon glaze and hericot vert"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["category_id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Poached cod in a tomato sauce over rice"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["category_id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Sauteed shrimp with parsley tarragon"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["category_id", 3]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Shave asparagus delite"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["category_id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Linguini with edemame asparagus and goat cheese dressing"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["category_id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Ny steak with arrugula and figs "], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["category_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Quinoa salad with arugula, grapes with mustard vinagrette"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["category_id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (25.1ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Greek chicken with yogurt sauce"], ["created_at", 2017-03-22 00:49:33 UTC], ["updated_at", 2017-03-22 00:49:33 UTC], ["category_id", 2]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (9990.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ezeats"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (9950.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ezeats"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (700.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ezeats"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ezeats_test"[0m
+  [1m[35m (794.5ms)[0m  [1m[35mCREATE DATABASE "ezeats" ENCODING = 'unicode'[0m
+  [1m[35m (547.7ms)[0m  [1m[35mCREATE DATABASE "ezeats_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (5.0ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (63.1ms)[0m  [1m[35mCREATE TABLE "categories" ("id" serial primary key, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (34.9ms)[0m  [1m[35mCREATE TABLE "images" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer, "image_url" character varying)[0m
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer)[0m
+  [1m[35m (36.5ms)[0m  [1m[35mCREATE TABLE "instructions" ("id" serial primary key, "step" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer)[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" serial primary key, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "category_id" integer)[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170321165639)[0m
+  [1m[35m (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170318184840),
+(20170318184856),
+(20170318185824),
+(20170318185843),
+(20170318190928),
+(20170318190944),
+(20170318190952),
+(20170321161401);
+
+[0m
+  [1m[35m (32.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (24.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (44.3ms)[0m  [1m[35mCREATE TABLE "categories" ("id" serial primary key, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (35.1ms)[0m  [1m[35mCREATE TABLE "images" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer, "image_url" character varying)[0m
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer)[0m
+  [1m[35m (34.7ms)[0m  [1m[35mCREATE TABLE "instructions" ("id" serial primary key, "step" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer)[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" serial primary key, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "category_id" integer)[0m
+  [1m[35m (33.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170321165639)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170318184840),
+(20170318184856),
+(20170318185824),
+(20170318185843),
+(20170318190928),
+(20170318190944),
+(20170318190952),
+(20170321161401);
+
+[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (24.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Beef"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Poultry"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Seafood"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Vegetarian"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 5], ["image_url", "http://i63.tinypic.com/51ugxk.jpg"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 4], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 9], ["image_url", "http://i63.tinypic.com/330hgde.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 8], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 10], ["image_url", "http://i67.tinypic.com/1zw0qz5.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 11], ["image_url", "http://i63.tinypic.com/29gfwr8.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 12], ["image_url", "http://i63.tinypic.com/2vnmdkm.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 14], ["image_url", "http://i64.tinypic.com/9qv1xt.jpg"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 15], ["image_url", "http://i65.tinypic.com/1zebl2s.jpg"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (24.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 3], ["image_url", "http://i67.tinypic.com/2mfnt04.jpg"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 13], ["image_url", "http://i63.tinypic.com/mimk5d.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 6], ["image_url", "http://i63.tinypic.com/fvw6rl.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (20.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Ny steak\r\narugula\r\nfeta cheese\r\nsalt\r\npepper\r\nbalsamic vinegar or some vinegar\r\nolive oil\r\nthyme\r\n4 figs halfed"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Filet mignon\r\nSalt\r\npepper\r\nRosemary\r\nSpinach\r\nolive oil\r\ngarlic"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "3/4 pound beef round steak, cut into 1/8-inch thick strips\r\nSoy sauce\r\nOyster sauce \r\nBlack bean sauce optional\r\nsalt \r\npepper\r\ngarlic\r\n1/2 broccoli\r\n1/2 teaspoon \r\nOlive oil"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 5]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nolive oil\r\nsalt\r\npepper\r\nthyme\r\nyougurt 2 spoons\r\nbibb lettuce"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 6]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nsalt\r\npepper\r\ncoconut milk\r\nlemongrass optional\r\ngarlic\r\nbasmati rice\r\nolive oil"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 8]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast or half a chicken with bone\r\nsal pepper\r\nparsley white onion chopped very small\r\nolive oil\r\ncider vinegar or red vinegar\r\ngarlic\r\nChili flakes optional"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 9]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 salmon filet\r\nsalt pepper\r\nDijon mustard \r\nparsley\r\nhericot vert or green beans"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 10]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1filet ofCod\r\nsal pepper, \r\ngarlic \r\ntomato sauce \"pomi\" or your choice or fresh roma tomatos\r\nbrown sugar\r\nbutter\r\ndry oregano"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 11]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1/2 a pound of shrimp\r\ngarlic\r\nparsley\r\ntarragon\r\nchilly flakes\r\nlemon and lemon zest\r\nwhite whine or vermouth\r\nsalt pepper\r\nolive oil"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 12]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 cup of quinoa\r\nbaby arugula\r\nfeta cheese \r\ngrapes\r\n1 pear\r\n1/4 of a pound of walnuts\r\nred onion\r\nmustard \r\nvinagre "], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 13]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "A bunch of green asparagus\r\ncherry tomatos\r\nolive oil\r\nrice vinegare\r\nsalt pepper\r\n2 eggs"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 14]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1/2 box of pasta : spaguetti, linguini your choise\"\r\ngrape tomatos \"your choise\"\r\ngarlic\r\nparsley\r\nedamame\r\n4 asparagus spears\r\nchives\r\npecorino cheese\r\ngoat cheese and little bit of 1/2 and 1/2 or milk"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 15]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt pepper thyme both sides\r\nPan fried or grill medium temperature\r\nIn a bowl mix the olive oil and balsamic\r\nToss the arugula and the cheese\r\nWhen the steak is ready cut alongside\r\nadd the figs\r\nPut on top and enjoy!"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 3]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt, pepper, and rosemary\r\nHeat the olive oil in mediun heat\r\nAdd the filet mignon to the pan and pan fried for 8 min per side\r\nIn a pot heat a little olive oil medium high sautee the garlic \r\nAdd the spinach tos for half a minute and serve with the filet mignon\r\nenjoy!"], ["created_at", 2017-03-22 00:51:02 UTC], ["updated_at", 2017-03-22 00:51:02 UTC], ["recipe_id", 4]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "In a bowl add the beef the salt, pepper, corn starch\r\nHeat the frying pan with olive oil mediun heat\r\nAdd the beef fried 3 minutes and add the sauces \r\n\r\nAdd the garlic\r\naAdd the broccoli for 3 more minutes \r\nenjoy"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["recipe_id", 5]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt, pepper, thyme to the breast\r\nPan fried or grilled the breast for 6 min per side\r\nIn a Bowl add the yougurt salt pepper and a little olive oil\r\nin a plate add the lettuce the chicken all ready cuted and drizzle the yougurt sauce\r\nenjoy"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["recipe_id", 6]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add the salt pepper to the chicken\r\nIn a semi deep pot add a little olive oil and the garlic medium heat for 2 minutes\r\nAfter that add the coconut milk salt lemongrass medium heat\r\nAdd the chicken to the coconut milk for 6 minutes.\r\nIn another pot add the rice all readfy washes in water to the pot with double amount of water\r\nSimmer  for around 18 min  \r\nEnsamble your plate and enjoy"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["recipe_id", 8]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt and pepper to the chicken \r\npreferibly for more flavor grill it but you can pan fried \r\nwith just breast 6 min per side, for chicken with a bone aprox  8 min per side\r\nin the mind time make the sauce with the choped garlic, choped parsley \r\nchoperd onion, add the chili flakes the olive oil and the vinegar 1?2 a cup of vinegar and 1/2 a cup\r\nof olive oil\r\nWhen the chiken is ready add the suce on top and enjoy"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["recipe_id", 9]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add to the salmon salt pepper and the dijon\r\npre heat the oven 400 degrees F\r\nplace the salmon on a rack on a trey\r\nbaked for 14 minutes\r\nin the mind time boil the hericot vert for 5 min and take them out  and put in to cold water\r\nadd a little bit of olive oil salt add the salmon to the plate and enjoy!"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["recipe_id", 10]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Take the cod and add salt pepper \r\nin a frying pan with a lid add the garlic with a little olive oil\r\nsauteed for 2 min medium heat\r\nadd the tomato sauce to the pan, cover all the  filet with the sauce\r\nadd a teaspoon of sugar, add the oregano and the butter\r\nand cook for 6 minutes with the lid on\r\nset up your plate with a little bit of leftover rice or pasta, your choice and enjoy!"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["recipe_id", 11]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.0ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt pepper and chilli flakes to the shrimp \r\nsauteed the shrimp for 3 to 4 minutes untill are red \"do not over cook\"\r\nset aside the shrimp \r\nadd to the pan a 1/2 a cup of wine or vermouth to deglace the pan\r\ncook medium heat until all the alcohol evaporates\r\nadd the lemon juice of 1 lemon and the lemon zest\r\nreduce for 2 munutes \r\nadd the shrimp dd the choped a small bunch parsley and the choped tarragon \"4 leaves\"\r\nmix well and ready! you can add pasta or rice if you want \r\nEnjoy!"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["recipe_id", 12]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Cook 1 cup of quinoa with 2 cups of water or vegetal broth for 18 minutes\r\nlet it cold\r\nonce is cold add the arugula\r\nthe feta, the choped half onion the grapes the pear sliced\r\nthe walnuts, and the vinaigrette "], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["recipe_id", 13]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Shave a good amount of asparagus in a mandolin or by hand\r\npan fryed with a little olve oil\r\nadd the cherry tomatos for 1 to 2 minutes always tossing with a tongs\r\nonce is ready add a little bit of rice vinegar salt and pepper\r\nadd to a nice plate and fry the eggs suny side up or optional \"soft or hard boiled eggs\"\r\nenjoy!"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["recipe_id", 14]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Cook the pasta in a big pot for 8 min or follow the instructions\r\nonce cook set aside with olive oil and toss well\r\nin the meantime in a frying pan add olive oil, garlic and cook for 2 to 3 minutes\r\nadd the tomatos,  and the small choiped asparagus\r\nadd the edemame\r\nand cook for 3 min\r\nin a cup add three spoons of goat cheese and disolve with a little bit of the half and half half a cup\r\nadd pepper, you don't want to liquid.\r\nin a bowl toss the pasta with this mixture serve in a plate add pecorino and enjoy"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["recipe_id", 15]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Rosemary steak with sauteed spinach"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["category_id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", " Chinesse style beef with broccoli"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["category_id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Thai style chicken with basmati rice"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["category_id", 2]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Grilled chicken with passley chutney"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["category_id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Roasted salmon with parsley dijon glaze and hericot vert"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["category_id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Poached cod in a tomato sauce over rice"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["category_id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Sauteed shrimp with parsley tarragon"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["category_id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Shave asparagus delite"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["category_id", 4]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (24.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Linguini with edemame asparagus and goat cheese dressing"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["category_id", 4]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Ny steak with arrugula and figs "], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["category_id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Quinoa salad with arugula, grapes with mustard vinagrette"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["category_id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Greek chicken with yogurt sauce"], ["created_at", 2017-03-22 00:51:03 UTC], ["updated_at", 2017-03-22 00:51:03 UTC], ["category_id", 2]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/recipes" for ::1 at 2017-03-21 20:51:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (12.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (11.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (155.4ms)
+Completed 200 OK in 2768ms (Views: 2410.1ms | ActiveRecord: 25.4ms)
+
+
+Started GET "/recipes/1" for ::1 at 2017-03-21 20:51:40 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (64.4ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 6.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_url' for nil:NilClass):
+    1: <div class="recipes" style="background:url(<%= @recipe.image.image_url %>);">
+    2: 
+    3: 
+    4: 
+  
+app/views/recipes/show.html.erb:1:in `_app_views_recipes_show_html_erb___4525954854199976782_70299775366860'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (35.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (126.4ms)
+Started GET "/recipes" for ::1 at 2017-03-21 20:51:45 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes/6" for ::1 at 2017-03-21 20:51:47 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mInstruction Load (1.3ms)[0m  [1m[34mSELECT  "instructions".* FROM "instructions" WHERE "instructions"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 6], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (134.4ms)
+Completed 200 OK in 174ms (Views: 122.8ms | ActiveRecord: 45.0ms)
+
+
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mRecipe Load (13.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m

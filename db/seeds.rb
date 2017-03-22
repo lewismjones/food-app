@@ -5,18 +5,18 @@ Category.create!([
   {description: "Vegetarian"}
 ])
 Image.create!([
-  {recipe_id: 5, image_url: "http://i63.tinypic.com/51ugxk.jpg"},
+  {recipe_id: 1, image_url: "http://i63.tinypic.com/51ugxk.jpg"},
+  {recipe_id: 2, image_url: "http://i66.tinypic.com/10elw5s.jpg"},
+  {recipe_id: 3, image_url: "http://i63.tinypic.com/330hgde.jpg"},
   {recipe_id: 4, image_url: "http://i66.tinypic.com/10elw5s.jpg"},
-  {recipe_id: 9, image_url: "http://i63.tinypic.com/330hgde.jpg"},
-  {recipe_id: 8, image_url: "http://i66.tinypic.com/10elw5s.jpg"},
-  {recipe_id: 10, image_url: "http://i67.tinypic.com/1zw0qz5.jpg"},
-  {recipe_id: 11, image_url: "http://i63.tinypic.com/29gfwr8.jpg"},
-  {recipe_id: 12, image_url: "http://i63.tinypic.com/2vnmdkm.jpg"},
-  {recipe_id: 14, image_url: "http://i64.tinypic.com/9qv1xt.jpg"},
-  {recipe_id: 15, image_url: "http://i65.tinypic.com/1zebl2s.jpg"},
-  {recipe_id: 3, image_url: "http://i67.tinypic.com/2mfnt04.jpg"},
-  {recipe_id: 13, image_url: "http://i63.tinypic.com/mimk5d.jpg"},
-  {recipe_id: 6, image_url: "http://i63.tinypic.com/fvw6rl.jpg"}
+  {recipe_id: 5, image_url: "http://i67.tinypic.com/1zw0qz5.jpg"},
+  {recipe_id: 6, image_url: "http://i63.tinypic.com/29gfwr8.jpg"},
+  {recipe_id: 7, image_url: "http://i63.tinypic.com/2vnmdkm.jpg"},
+  {recipe_id: 8, image_url: "http://i64.tinypic.com/9qv1xt.jpg"},
+  {recipe_id: 9, image_url: "http://i65.tinypic.com/1zebl2s.jpg"},
+  {recipe_id: 10, image_url: "http://i67.tinypic.com/2mfnt04.jpg"},
+  {recipe_id: 11, image_url: "http://i63.tinypic.com/mimk5d.jpg"},
+  {recipe_id: 12, image_url: "http://i63.tinypic.com/fvw6rl.jpg"}
 ])
 Ingredient.create!([
   {name: "1 Ny steak\r\narugula\r\nfeta cheese\r\nsalt\r\npepper\r\nbalsamic vinegar or some vinegar\r\nolive oil\r\nthyme\r\n4 figs halfed", recipe_id: 3},
