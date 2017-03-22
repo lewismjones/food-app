@@ -2,6 +2,7 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
 .categoriesshow {
   text-align: center;
   height: 100vh;
@@ -9,10 +10,15 @@
   color: white;
   font-size: 20px;
   margin: auto; }
+
 #Beef {background-image: url("http://i64.tinypic.com/2e5v1vn.jpg"); }
+
 #Poultry {background-image: url("http://i65.tinypic.com/33m8jzo.jpg");}
+
 #Seafood {background-image: url("http://i68.tinypic.com/34niiva.jpg");}
+
 #Vegetarian {background-image: url("http://i66.tinypic.com/30uwjex.jpg");}
+
 #the-table {
   background: rgba(0, 0, 0, 0.75);
   display: inline-block;
@@ -20,13 +26,16 @@
   transform: translate(0, 160%)
 
 }
+
 #center-p {
   text-align: center;
 }
+
 #part-table {
   margin-left: auto;
   margin-right: auto;
 }
+
 .table-text {
   font-size: 25px;
   line-height: 30px;
