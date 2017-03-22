@@ -48,7 +48,7 @@ Instruction.create!([
 ])
 Recipe.create!([
   {description: "Rosemary steak with sauteed spinach", category_id: 1},
-  {description: " Chinesse style beef with broccoli", category_id: 1},
+  {description: "Chinese style beef with broccoli", category_id: 1},
   {description: "Thai style chicken with basmati rice", category_id: 2},
   {description: "Grilled chicken with passley chutney", category_id: 2},
   {description: "Roasted salmon with parsley dijon glaze and hericot vert", category_id: 3},

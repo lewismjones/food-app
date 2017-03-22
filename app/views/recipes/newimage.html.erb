@@ -1,7 +1,9 @@
 <div class="newrecipe" id="background">
-<span id="the-table-recipe">
+<span id="the-table-recipe2" style=color:white;>
+
 <h1>Link us to an image!</h1>
+
 <%= render 'form3', image: @image, recipe: @recipe%>
-<%= link_to 'Back', Category.find(@recipe.category_id) %>
+<%= link_to 'Back', recipes_path %>
 </span>
 </div>
