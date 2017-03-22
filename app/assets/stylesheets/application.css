@@ -112,13 +112,13 @@
 
 
  /* sets base style for each page */
- html {
+ /*html {
  -webkit-background-size: contain;
  -moz-background-size: contain;
  -o-background-size: contain;
  background-size: contain;
  background-color: black;
- }
+ }*/
 
  /* set background image per page */
  .home-bg {
