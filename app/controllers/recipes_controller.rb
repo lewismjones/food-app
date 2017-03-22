@@ -144,9 +144,10 @@ end
   # DELETE /recipes/1
   # DELETE /recipes/1.json
   def destroy
+    @category = Category.find(@recipe.category_id)
     @recipe.destroy
     respond_to do |format|
-      format.html { redirect_to recipes_url, notice: 'Recipe was successfully destroyed.' }
+      format.html { redirect_to @category, notice: 'Recipe was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
