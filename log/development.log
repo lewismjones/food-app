@@ -6947,3 +6947,1327 @@ Completed 200 OK in 174ms (Views: 122.8ms | ActiveRecord: 45.0ms)
 
   [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
   [1m[36mRecipe Load (13.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+Started GET "/recipes" for ::1 at 2017-03-21 20:59:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (22.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (7.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (75.8ms)
+Completed 200 OK in 437ms (Views: 332.3ms | ActiveRecord: 52.2ms)
+
+
+Started GET "/recipes/1" for ::1 at 2017-03-21 20:59:59 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (48.1ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 6.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_url' for nil:NilClass):
+    1: <div class="recipes" style="background:url(<%= @recipe.image.image_url %>);">
+    2: 
+    3: 
+    4: 
+  
+app/views/recipes/show.html.erb:1:in `_app_views_recipes_show_html_erb___1004695770074496532_70161546632780'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.1ms)
+Started GET "/recipes" for ::1 at 2017-03-21 21:00:05 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/2" for ::1 at 2017-03-21 21:00:07 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_url' for nil:NilClass):
+    1: <div class="recipes" style="background:url(<%= @recipe.image.image_url %>);">
+    2: 
+    3: 
+    4: 
+  
+app/views/recipes/show.html.erb:1:in `_app_views_recipes_show_html_erb___1004695770074496532_70161546953020'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.8ms)
+Started GET "/recipes" for ::1 at 2017-03-21 21:00:09 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 38ms (Views: 33.6ms | ActiveRecord: 1.6ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (20.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Beef"], ["created_at", 2017-03-22 01:00:45 UTC], ["updated_at", 2017-03-22 01:00:45 UTC]]
+  [1m[35m (50.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Poultry"], ["created_at", 2017-03-22 01:00:45 UTC], ["updated_at", 2017-03-22 01:00:45 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.9ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Seafood"], ["created_at", 2017-03-22 01:00:45 UTC], ["updated_at", 2017-03-22 01:00:45 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Vegetarian"], ["created_at", 2017-03-22 01:00:45 UTC], ["updated_at", 2017-03-22 01:00:45 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (24.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (26.4ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:45 UTC], ["updated_at", 2017-03-22 01:00:45 UTC], ["recipe_id", 1], ["image_url", "http://i63.tinypic.com/51ugxk.jpg"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:45 UTC], ["updated_at", 2017-03-22 01:00:45 UTC], ["recipe_id", 2], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:45 UTC], ["updated_at", 2017-03-22 01:00:45 UTC], ["recipe_id", 3], ["image_url", "http://i63.tinypic.com/330hgde.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 4], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (24.5ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 5], ["image_url", "http://i67.tinypic.com/1zw0qz5.jpg"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 6], ["image_url", "http://i63.tinypic.com/29gfwr8.jpg"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 7], ["image_url", "http://i63.tinypic.com/2vnmdkm.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 8], ["image_url", "http://i64.tinypic.com/9qv1xt.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 9], ["image_url", "http://i65.tinypic.com/1zebl2s.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (24.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 10], ["image_url", "http://i67.tinypic.com/2mfnt04.jpg"]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 11], ["image_url", "http://i63.tinypic.com/mimk5d.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 12], ["image_url", "http://i63.tinypic.com/fvw6rl.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Ny steak\r\narugula\r\nfeta cheese\r\nsalt\r\npepper\r\nbalsamic vinegar or some vinegar\r\nolive oil\r\nthyme\r\n4 figs halfed"], ["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 3]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Filet mignon\r\nSalt\r\npepper\r\nRosemary\r\nSpinach\r\nolive oil\r\ngarlic"], ["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 4]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "3/4 pound beef round steak, cut into 1/8-inch thick strips\r\nSoy sauce\r\nOyster sauce \r\nBlack bean sauce optional\r\nsalt \r\npepper\r\ngarlic\r\n1/2 broccoli\r\n1/2 teaspoon \r\nOlive oil"], ["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nolive oil\r\nsalt\r\npepper\r\nthyme\r\nyougurt 2 spoons\r\nbibb lettuce"], ["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 6]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nsalt\r\npepper\r\ncoconut milk\r\nlemongrass optional\r\ngarlic\r\nbasmati rice\r\nolive oil"], ["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 8]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (24.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast or half a chicken with bone\r\nsal pepper\r\nparsley white onion chopped very small\r\nolive oil\r\ncider vinegar or red vinegar\r\ngarlic\r\nChili flakes optional"], ["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 9]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 salmon filet\r\nsalt pepper\r\nDijon mustard \r\nparsley\r\nhericot vert or green beans"], ["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 10]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1filet ofCod\r\nsal pepper, \r\ngarlic \r\ntomato sauce \"pomi\" or your choice or fresh roma tomatos\r\nbrown sugar\r\nbutter\r\ndry oregano"], ["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 11]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1/2 a pound of shrimp\r\ngarlic\r\nparsley\r\ntarragon\r\nchilly flakes\r\nlemon and lemon zest\r\nwhite whine or vermouth\r\nsalt pepper\r\nolive oil"], ["created_at", 2017-03-22 01:00:46 UTC], ["updated_at", 2017-03-22 01:00:46 UTC], ["recipe_id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (18.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (26.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (690.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ezeats"[0m
+  [1m[35m (645.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ezeats_test"[0m
+  [1m[35m (688.2ms)[0m  [1m[35mCREATE DATABASE "ezeats" ENCODING = 'unicode'[0m
+  [1m[35m (543.8ms)[0m  [1m[35mCREATE DATABASE "ezeats_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (41.5ms)[0m  [1m[35mCREATE TABLE "categories" ("id" serial primary key, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "images" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer, "image_url" character varying)[0m
+  [1m[35m (34.0ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer)[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "instructions" ("id" serial primary key, "step" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer)[0m
+  [1m[35m (34.9ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" serial primary key, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "category_id" integer)[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170321165639)[0m
+  [1m[35m (26.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170318184840),
+(20170318184856),
+(20170318185824),
+(20170318185843),
+(20170318190928),
+(20170318190944),
+(20170318190952),
+(20170321161401);
+
+[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (19.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (16.9ms)[0m  [1m[35mCREATE TABLE "categories" ("id" serial primary key, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (36.1ms)[0m  [1m[35mCREATE TABLE "images" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer, "image_url" character varying)[0m
+  [1m[35m (35.8ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer)[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "instructions" ("id" serial primary key, "step" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer)[0m
+  [1m[35m (37.3ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" serial primary key, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "category_id" integer)[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170321165639)[0m
+  [1m[35m (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170318184840),
+(20170318184856),
+(20170318185824),
+(20170318185843),
+(20170318190928),
+(20170318190944),
+(20170318190952),
+(20170321161401);
+
+[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (25.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Beef"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Poultry"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Seafood"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Vegetarian"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 1], ["image_url", "http://i63.tinypic.com/51ugxk.jpg"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 2], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 3], ["image_url", "http://i63.tinypic.com/330hgde.jpg"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 4], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 5], ["image_url", "http://i67.tinypic.com/1zw0qz5.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 6], ["image_url", "http://i63.tinypic.com/29gfwr8.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (24.8ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 7], ["image_url", "http://i63.tinypic.com/2vnmdkm.jpg"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 8], ["image_url", "http://i64.tinypic.com/9qv1xt.jpg"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 9], ["image_url", "http://i65.tinypic.com/1zebl2s.jpg"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 10], ["image_url", "http://i67.tinypic.com/2mfnt04.jpg"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 11], ["image_url", "http://i63.tinypic.com/mimk5d.jpg"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (24.8ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 12], ["image_url", "http://i63.tinypic.com/fvw6rl.jpg"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (24.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Ny steak\r\narugula\r\nfeta cheese\r\nsalt\r\npepper\r\nbalsamic vinegar or some vinegar\r\nolive oil\r\nthyme\r\n4 figs halfed"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 3]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Filet mignon\r\nSalt\r\npepper\r\nRosemary\r\nSpinach\r\nolive oil\r\ngarlic"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "3/4 pound beef round steak, cut into 1/8-inch thick strips\r\nSoy sauce\r\nOyster sauce \r\nBlack bean sauce optional\r\nsalt \r\npepper\r\ngarlic\r\n1/2 broccoli\r\n1/2 teaspoon \r\nOlive oil"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 5]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nolive oil\r\nsalt\r\npepper\r\nthyme\r\nyougurt 2 spoons\r\nbibb lettuce"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 6]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nsalt\r\npepper\r\ncoconut milk\r\nlemongrass optional\r\ngarlic\r\nbasmati rice\r\nolive oil"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.0ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast or half a chicken with bone\r\nsal pepper\r\nparsley white onion chopped very small\r\nolive oil\r\ncider vinegar or red vinegar\r\ngarlic\r\nChili flakes optional"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 9]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 salmon filet\r\nsalt pepper\r\nDijon mustard \r\nparsley\r\nhericot vert or green beans"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 10]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1filet ofCod\r\nsal pepper, \r\ngarlic \r\ntomato sauce \"pomi\" or your choice or fresh roma tomatos\r\nbrown sugar\r\nbutter\r\ndry oregano"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 11]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1/2 a pound of shrimp\r\ngarlic\r\nparsley\r\ntarragon\r\nchilly flakes\r\nlemon and lemon zest\r\nwhite whine or vermouth\r\nsalt pepper\r\nolive oil"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 12]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 cup of quinoa\r\nbaby arugula\r\nfeta cheese \r\ngrapes\r\n1 pear\r\n1/4 of a pound of walnuts\r\nred onion\r\nmustard \r\nvinagre "], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 13]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "A bunch of green asparagus\r\ncherry tomatos\r\nolive oil\r\nrice vinegare\r\nsalt pepper\r\n2 eggs"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 14]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1/2 box of pasta : spaguetti, linguini your choise\"\r\ngrape tomatos \"your choise\"\r\ngarlic\r\nparsley\r\nedamame\r\n4 asparagus spears\r\nchives\r\npecorino cheese\r\ngoat cheese and little bit of 1/2 and 1/2 or milk"], ["created_at", 2017-03-22 01:00:54 UTC], ["updated_at", 2017-03-22 01:00:54 UTC], ["recipe_id", 15]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (22.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt pepper thyme both sides\r\nPan fried or grill medium temperature\r\nIn a bowl mix the olive oil and balsamic\r\nToss the arugula and the cheese\r\nWhen the steak is ready cut alongside\r\nadd the figs\r\nPut on top and enjoy!"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["recipe_id", 3]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt, pepper, and rosemary\r\nHeat the olive oil in mediun heat\r\nAdd the filet mignon to the pan and pan fried for 8 min per side\r\nIn a pot heat a little olive oil medium high sautee the garlic \r\nAdd the spinach tos for half a minute and serve with the filet mignon\r\nenjoy!"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["recipe_id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "In a bowl add the beef the salt, pepper, corn starch\r\nHeat the frying pan with olive oil mediun heat\r\nAdd the beef fried 3 minutes and add the sauces \r\n\r\nAdd the garlic\r\naAdd the broccoli for 3 more minutes \r\nenjoy"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["recipe_id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt, pepper, thyme to the breast\r\nPan fried or grilled the breast for 6 min per side\r\nIn a Bowl add the yougurt salt pepper and a little olive oil\r\nin a plate add the lettuce the chicken all ready cuted and drizzle the yougurt sauce\r\nenjoy"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["recipe_id", 6]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add the salt pepper to the chicken\r\nIn a semi deep pot add a little olive oil and the garlic medium heat for 2 minutes\r\nAfter that add the coconut milk salt lemongrass medium heat\r\nAdd the chicken to the coconut milk for 6 minutes.\r\nIn another pot add the rice all readfy washes in water to the pot with double amount of water\r\nSimmer  for around 18 min  \r\nEnsamble your plate and enjoy"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["recipe_id", 8]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt and pepper to the chicken \r\npreferibly for more flavor grill it but you can pan fried \r\nwith just breast 6 min per side, for chicken with a bone aprox  8 min per side\r\nin the mind time make the sauce with the choped garlic, choped parsley \r\nchoperd onion, add the chili flakes the olive oil and the vinegar 1?2 a cup of vinegar and 1/2 a cup\r\nof olive oil\r\nWhen the chiken is ready add the suce on top and enjoy"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["recipe_id", 9]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add to the salmon salt pepper and the dijon\r\npre heat the oven 400 degrees F\r\nplace the salmon on a rack on a trey\r\nbaked for 14 minutes\r\nin the mind time boil the hericot vert for 5 min and take them out  and put in to cold water\r\nadd a little bit of olive oil salt add the salmon to the plate and enjoy!"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["recipe_id", 10]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Take the cod and add salt pepper \r\nin a frying pan with a lid add the garlic with a little olive oil\r\nsauteed for 2 min medium heat\r\nadd the tomato sauce to the pan, cover all the  filet with the sauce\r\nadd a teaspoon of sugar, add the oregano and the butter\r\nand cook for 6 minutes with the lid on\r\nset up your plate with a little bit of leftover rice or pasta, your choice and enjoy!"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["recipe_id", 11]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt pepper and chilli flakes to the shrimp \r\nsauteed the shrimp for 3 to 4 minutes untill are red \"do not over cook\"\r\nset aside the shrimp \r\nadd to the pan a 1/2 a cup of wine or vermouth to deglace the pan\r\ncook medium heat until all the alcohol evaporates\r\nadd the lemon juice of 1 lemon and the lemon zest\r\nreduce for 2 munutes \r\nadd the shrimp dd the choped a small bunch parsley and the choped tarragon \"4 leaves\"\r\nmix well and ready! you can add pasta or rice if you want \r\nEnjoy!"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["recipe_id", 12]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Cook 1 cup of quinoa with 2 cups of water or vegetal broth for 18 minutes\r\nlet it cold\r\nonce is cold add the arugula\r\nthe feta, the choped half onion the grapes the pear sliced\r\nthe walnuts, and the vinaigrette "], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["recipe_id", 13]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Shave a good amount of asparagus in a mandolin or by hand\r\npan fryed with a little olve oil\r\nadd the cherry tomatos for 1 to 2 minutes always tossing with a tongs\r\nonce is ready add a little bit of rice vinegar salt and pepper\r\nadd to a nice plate and fry the eggs suny side up or optional \"soft or hard boiled eggs\"\r\nenjoy!"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["recipe_id", 14]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Cook the pasta in a big pot for 8 min or follow the instructions\r\nonce cook set aside with olive oil and toss well\r\nin the meantime in a frying pan add olive oil, garlic and cook for 2 to 3 minutes\r\nadd the tomatos,  and the small choiped asparagus\r\nadd the edemame\r\nand cook for 3 min\r\nin a cup add three spoons of goat cheese and disolve with a little bit of the half and half half a cup\r\nadd pepper, you don't want to liquid.\r\nin a bowl toss the pasta with this mixture serve in a plate add pecorino and enjoy"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["recipe_id", 15]]
+  [1m[35m (26.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (23.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Rosemary steak with sauteed spinach"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["category_id", 1]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", " Chinesse style beef with broccoli"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["category_id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Thai style chicken with basmati rice"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["category_id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Grilled chicken with passley chutney"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["category_id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Roasted salmon with parsley dijon glaze and hericot vert"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["category_id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.1ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Poached cod in a tomato sauce over rice"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["category_id", 3]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Sauteed shrimp with parsley tarragon"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["category_id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Shave asparagus delite"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["category_id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Linguini with edemame asparagus and goat cheese dressing"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["category_id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Ny steak with arrugula and figs "], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["category_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Quinoa salad with arugula, grapes with mustard vinagrette"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["category_id", 4]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (26.2ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Greek chicken with yogurt sauce"], ["created_at", 2017-03-22 01:00:55 UTC], ["updated_at", 2017-03-22 01:00:55 UTC], ["category_id", 2]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5414788180524291870);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (19.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (26.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5414788180524291870)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (22.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Beef"], ["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.5ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Poultry"], ["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Seafood"], ["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Vegetarian"], ["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 1], ["image_url", "http://i63.tinypic.com/51ugxk.jpg"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (24.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 2], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 3], ["image_url", "http://i63.tinypic.com/330hgde.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 4], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 5], ["image_url", "http://i67.tinypic.com/1zw0qz5.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 6], ["image_url", "http://i63.tinypic.com/29gfwr8.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 7], ["image_url", "http://i63.tinypic.com/2vnmdkm.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 8], ["image_url", "http://i64.tinypic.com/9qv1xt.jpg"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 9], ["image_url", "http://i65.tinypic.com/1zebl2s.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 10], ["image_url", "http://i67.tinypic.com/2mfnt04.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 11], ["image_url", "http://i63.tinypic.com/mimk5d.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 12], ["image_url", "http://i63.tinypic.com/fvw6rl.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Ny steak\r\narugula\r\nfeta cheese\r\nsalt\r\npepper\r\nbalsamic vinegar or some vinegar\r\nolive oil\r\nthyme\r\n4 figs halfed"], ["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 3]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Filet mignon\r\nSalt\r\npepper\r\nRosemary\r\nSpinach\r\nolive oil\r\ngarlic"], ["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 4]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "3/4 pound beef round steak, cut into 1/8-inch thick strips\r\nSoy sauce\r\nOyster sauce \r\nBlack bean sauce optional\r\nsalt \r\npepper\r\ngarlic\r\n1/2 broccoli\r\n1/2 teaspoon \r\nOlive oil"], ["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nolive oil\r\nsalt\r\npepper\r\nthyme\r\nyougurt 2 spoons\r\nbibb lettuce"], ["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 6]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nsalt\r\npepper\r\ncoconut milk\r\nlemongrass optional\r\ngarlic\r\nbasmati rice\r\nolive oil"], ["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast or half a chicken with bone\r\nsal pepper\r\nparsley white onion chopped very small\r\nolive oil\r\ncider vinegar or red vinegar\r\ngarlic\r\nChili flakes optional"], ["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (25.0ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 salmon filet\r\nsalt pepper\r\nDijon mustard \r\nparsley\r\nhericot vert or green beans"], ["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 10]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1filet ofCod\r\nsal pepper, \r\ngarlic \r\ntomato sauce \"pomi\" or your choice or fresh roma tomatos\r\nbrown sugar\r\nbutter\r\ndry oregano"], ["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 11]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1/2 a pound of shrimp\r\ngarlic\r\nparsley\r\ntarragon\r\nchilly flakes\r\nlemon and lemon zest\r\nwhite whine or vermouth\r\nsalt pepper\r\nolive oil"], ["created_at", 2017-03-22 01:01:07 UTC], ["updated_at", 2017-03-22 01:01:07 UTC], ["recipe_id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (26.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35mSQL (0.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (12.2ms)[0m  [1m[35mDROP TABLE "categories" CASCADE[0m
+  [1m[35m (37.1ms)[0m  [1m[35mCREATE TABLE "categories" ("id" serial primary key, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (3.2ms)[0m  [1m[35mDROP TABLE "images" CASCADE[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "images" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer, "image_url" character varying)[0m
+  [1m[35m (28.5ms)[0m  [1m[35mDROP TABLE "ingredients" CASCADE[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer)[0m
+  [1m[35m (5.5ms)[0m  [1m[35mDROP TABLE "instructions" CASCADE[0m
+  [1m[35m (34.6ms)[0m  [1m[35mCREATE TABLE "instructions" ("id" serial primary key, "step" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mDROP TABLE "recipes" CASCADE[0m
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" serial primary key, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "category_id" integer)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (24.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (36.5ms)[0m  [1m[35mDROP TABLE "categories" CASCADE[0m
+  [1m[35m (12.4ms)[0m  [1m[35mCREATE TABLE "categories" ("id" serial primary key, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (31.2ms)[0m  [1m[35mDROP TABLE "images" CASCADE[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "images" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer, "image_url" character varying)[0m
+  [1m[35m (4.4ms)[0m  [1m[35mDROP TABLE "ingredients" CASCADE[0m
+  [1m[35m (34.2ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer)[0m
+  [1m[35m (3.3ms)[0m  [1m[35mDROP TABLE "instructions" CASCADE[0m
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "instructions" ("id" serial primary key, "step" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "recipe_id" integer)[0m
+  [1m[35m (5.8ms)[0m  [1m[35mDROP TABLE "recipes" CASCADE[0m
+  [1m[35m (10.6ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" serial primary key, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "category_id" integer)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (24.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Beef"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Poultry"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Seafood"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Vegetarian"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 1], ["image_url", "http://i63.tinypic.com/51ugxk.jpg"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 2], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 3], ["image_url", "http://i63.tinypic.com/330hgde.jpg"]]
+  [1m[35m (25.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 4], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 5], ["image_url", "http://i67.tinypic.com/1zw0qz5.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 6], ["image_url", "http://i63.tinypic.com/29gfwr8.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 7], ["image_url", "http://i63.tinypic.com/2vnmdkm.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 8], ["image_url", "http://i64.tinypic.com/9qv1xt.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 9], ["image_url", "http://i65.tinypic.com/1zebl2s.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 10], ["image_url", "http://i67.tinypic.com/2mfnt04.jpg"]]
+  [1m[35m (25.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 11], ["image_url", "http://i63.tinypic.com/mimk5d.jpg"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 12], ["image_url", "http://i63.tinypic.com/fvw6rl.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Ny steak\r\narugula\r\nfeta cheese\r\nsalt\r\npepper\r\nbalsamic vinegar or some vinegar\r\nolive oil\r\nthyme\r\n4 figs halfed"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 3]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Filet mignon\r\nSalt\r\npepper\r\nRosemary\r\nSpinach\r\nolive oil\r\ngarlic"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "3/4 pound beef round steak, cut into 1/8-inch thick strips\r\nSoy sauce\r\nOyster sauce \r\nBlack bean sauce optional\r\nsalt \r\npepper\r\ngarlic\r\n1/2 broccoli\r\n1/2 teaspoon \r\nOlive oil"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nolive oil\r\nsalt\r\npepper\r\nthyme\r\nyougurt 2 spoons\r\nbibb lettuce"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 6]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nsalt\r\npepper\r\ncoconut milk\r\nlemongrass optional\r\ngarlic\r\nbasmati rice\r\nolive oil"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 8]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast or half a chicken with bone\r\nsal pepper\r\nparsley white onion chopped very small\r\nolive oil\r\ncider vinegar or red vinegar\r\ngarlic\r\nChili flakes optional"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 salmon filet\r\nsalt pepper\r\nDijon mustard \r\nparsley\r\nhericot vert or green beans"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 10]]
+  [1m[35m (26.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1filet ofCod\r\nsal pepper, \r\ngarlic \r\ntomato sauce \"pomi\" or your choice or fresh roma tomatos\r\nbrown sugar\r\nbutter\r\ndry oregano"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 11]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1/2 a pound of shrimp\r\ngarlic\r\nparsley\r\ntarragon\r\nchilly flakes\r\nlemon and lemon zest\r\nwhite whine or vermouth\r\nsalt pepper\r\nolive oil"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 cup of quinoa\r\nbaby arugula\r\nfeta cheese \r\ngrapes\r\n1 pear\r\n1/4 of a pound of walnuts\r\nred onion\r\nmustard \r\nvinagre "], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 13]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "A bunch of green asparagus\r\ncherry tomatos\r\nolive oil\r\nrice vinegare\r\nsalt pepper\r\n2 eggs"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 14]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1/2 box of pasta : spaguetti, linguini your choise\"\r\ngrape tomatos \"your choise\"\r\ngarlic\r\nparsley\r\nedamame\r\n4 asparagus spears\r\nchives\r\npecorino cheese\r\ngoat cheese and little bit of 1/2 and 1/2 or milk"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 15]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt pepper thyme both sides\r\nPan fried or grill medium temperature\r\nIn a bowl mix the olive oil and balsamic\r\nToss the arugula and the cheese\r\nWhen the steak is ready cut alongside\r\nadd the figs\r\nPut on top and enjoy!"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 3]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt, pepper, and rosemary\r\nHeat the olive oil in mediun heat\r\nAdd the filet mignon to the pan and pan fried for 8 min per side\r\nIn a pot heat a little olive oil medium high sautee the garlic \r\nAdd the spinach tos for half a minute and serve with the filet mignon\r\nenjoy!"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "In a bowl add the beef the salt, pepper, corn starch\r\nHeat the frying pan with olive oil mediun heat\r\nAdd the beef fried 3 minutes and add the sauces \r\n\r\nAdd the garlic\r\naAdd the broccoli for 3 more minutes \r\nenjoy"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 5]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt, pepper, thyme to the breast\r\nPan fried or grilled the breast for 6 min per side\r\nIn a Bowl add the yougurt salt pepper and a little olive oil\r\nin a plate add the lettuce the chicken all ready cuted and drizzle the yougurt sauce\r\nenjoy"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 6]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add the salt pepper to the chicken\r\nIn a semi deep pot add a little olive oil and the garlic medium heat for 2 minutes\r\nAfter that add the coconut milk salt lemongrass medium heat\r\nAdd the chicken to the coconut milk for 6 minutes.\r\nIn another pot add the rice all readfy washes in water to the pot with double amount of water\r\nSimmer  for around 18 min  \r\nEnsamble your plate and enjoy"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 8]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt and pepper to the chicken \r\npreferibly for more flavor grill it but you can pan fried \r\nwith just breast 6 min per side, for chicken with a bone aprox  8 min per side\r\nin the mind time make the sauce with the choped garlic, choped parsley \r\nchoperd onion, add the chili flakes the olive oil and the vinegar 1?2 a cup of vinegar and 1/2 a cup\r\nof olive oil\r\nWhen the chiken is ready add the suce on top and enjoy"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add to the salmon salt pepper and the dijon\r\npre heat the oven 400 degrees F\r\nplace the salmon on a rack on a trey\r\nbaked for 14 minutes\r\nin the mind time boil the hericot vert for 5 min and take them out  and put in to cold water\r\nadd a little bit of olive oil salt add the salmon to the plate and enjoy!"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 10]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Take the cod and add salt pepper \r\nin a frying pan with a lid add the garlic with a little olive oil\r\nsauteed for 2 min medium heat\r\nadd the tomato sauce to the pan, cover all the  filet with the sauce\r\nadd a teaspoon of sugar, add the oregano and the butter\r\nand cook for 6 minutes with the lid on\r\nset up your plate with a little bit of leftover rice or pasta, your choice and enjoy!"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 11]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Add salt pepper and chilli flakes to the shrimp \r\nsauteed the shrimp for 3 to 4 minutes untill are red \"do not over cook\"\r\nset aside the shrimp \r\nadd to the pan a 1/2 a cup of wine or vermouth to deglace the pan\r\ncook medium heat until all the alcohol evaporates\r\nadd the lemon juice of 1 lemon and the lemon zest\r\nreduce for 2 munutes \r\nadd the shrimp dd the choped a small bunch parsley and the choped tarragon \"4 leaves\"\r\nmix well and ready! you can add pasta or rice if you want \r\nEnjoy!"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Cook 1 cup of quinoa with 2 cups of water or vegetal broth for 18 minutes\r\nlet it cold\r\nonce is cold add the arugula\r\nthe feta, the choped half onion the grapes the pear sliced\r\nthe walnuts, and the vinaigrette "], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 13]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (24.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Shave a good amount of asparagus in a mandolin or by hand\r\npan fryed with a little olve oil\r\nadd the cherry tomatos for 1 to 2 minutes always tossing with a tongs\r\nonce is ready add a little bit of rice vinegar salt and pepper\r\nadd to a nice plate and fry the eggs suny side up or optional \"soft or hard boiled eggs\"\r\nenjoy!"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 14]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "instructions" ("step", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["step", "Cook the pasta in a big pot for 8 min or follow the instructions\r\nonce cook set aside with olive oil and toss well\r\nin the meantime in a frying pan add olive oil, garlic and cook for 2 to 3 minutes\r\nadd the tomatos,  and the small choiped asparagus\r\nadd the edemame\r\nand cook for 3 min\r\nin a cup add three spoons of goat cheese and disolve with a little bit of the half and half half a cup\r\nadd pepper, you don't want to liquid.\r\nin a bowl toss the pasta with this mixture serve in a plate add pecorino and enjoy"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["recipe_id", 15]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (22.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Rosemary steak with sauteed spinach"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["category_id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", " Chinesse style beef with broccoli"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["category_id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Thai style chicken with basmati rice"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["category_id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Grilled chicken with passley chutney"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["category_id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Roasted salmon with parsley dijon glaze and hericot vert"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["category_id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Poached cod in a tomato sauce over rice"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["category_id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Sauteed shrimp with parsley tarragon"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["category_id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Shave asparagus delite"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["category_id", 4]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Linguini with edemame asparagus and goat cheese dressing"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["category_id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Ny steak with arrugula and figs "], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["category_id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Quinoa salad with arugula, grapes with mustard vinagrette"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["category_id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("description", "created_at", "updated_at", "category_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "Greek chicken with yogurt sauce"], ["created_at", 2017-03-22 01:01:23 UTC], ["updated_at", 2017-03-22 01:01:23 UTC], ["category_id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (16.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Beef"], ["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Poultry"], ["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.3ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Seafood"], ["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Vegetarian"], ["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 1], ["image_url", "http://i63.tinypic.com/51ugxk.jpg"]]
+  [1m[35m (27.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 2], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 3], ["image_url", "http://i63.tinypic.com/330hgde.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 4], ["image_url", "http://i66.tinypic.com/10elw5s.jpg"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 5], ["image_url", "http://i67.tinypic.com/1zw0qz5.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 6], ["image_url", "http://i63.tinypic.com/29gfwr8.jpg"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 7], ["image_url", "http://i63.tinypic.com/2vnmdkm.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 8], ["image_url", "http://i64.tinypic.com/9qv1xt.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 9], ["image_url", "http://i65.tinypic.com/1zebl2s.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (25.1ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 10], ["image_url", "http://i67.tinypic.com/2mfnt04.jpg"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 11], ["image_url", "http://i63.tinypic.com/mimk5d.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "images" ("created_at", "updated_at", "recipe_id", "image_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 12], ["image_url", "http://i63.tinypic.com/fvw6rl.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Ny steak\r\narugula\r\nfeta cheese\r\nsalt\r\npepper\r\nbalsamic vinegar or some vinegar\r\nolive oil\r\nthyme\r\n4 figs halfed"], ["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (25.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 Filet mignon\r\nSalt\r\npepper\r\nRosemary\r\nSpinach\r\nolive oil\r\ngarlic"], ["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 4]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "3/4 pound beef round steak, cut into 1/8-inch thick strips\r\nSoy sauce\r\nOyster sauce \r\nBlack bean sauce optional\r\nsalt \r\npepper\r\ngarlic\r\n1/2 broccoli\r\n1/2 teaspoon \r\nOlive oil"], ["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nolive oil\r\nsalt\r\npepper\r\nthyme\r\nyougurt 2 spoons\r\nbibb lettuce"], ["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 6]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast\r\nsalt\r\npepper\r\ncoconut milk\r\nlemongrass optional\r\ngarlic\r\nbasmati rice\r\nolive oil"], ["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 8]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 chicken breast or half a chicken with bone\r\nsal pepper\r\nparsley white onion chopped very small\r\nolive oil\r\ncider vinegar or red vinegar\r\ngarlic\r\nChili flakes optional"], ["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 9]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (25.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1 salmon filet\r\nsalt pepper\r\nDijon mustard \r\nparsley\r\nhericot vert or green beans"], ["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 10]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1filet ofCod\r\nsal pepper, \r\ngarlic \r\ntomato sauce \"pomi\" or your choice or fresh roma tomatos\r\nbrown sugar\r\nbutter\r\ndry oregano"], ["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 11]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "recipe_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1/2 a pound of shrimp\r\ngarlic\r\nparsley\r\ntarragon\r\nchilly flakes\r\nlemon and lemon zest\r\nwhite whine or vermouth\r\nsalt pepper\r\nolive oil"], ["created_at", 2017-03-22 01:01:29 UTC], ["updated_at", 2017-03-22 01:01:29 UTC], ["recipe_id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (24.2ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/recipes/1" for ::1 at 2017-03-21 21:02:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (77.3ms)
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 44.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9:   <%= @recipe.description %>
+    10: </p>
+    11: <p>Ingredients <br>
+    12: <%= @recipe.ingredient.name %>
+    13: </p>
+    14: <p> Instructions <br>
+    15: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:12:in `_app_views_recipes_show_html_erb__1195834186420715872_70351467186040'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.9ms)
+Started GET "/recipes/" for ::1 at 2017-03-21 21:02:16 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (17.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 283ms (Views: 262.4ms | ActiveRecord: 17.3ms)
+
+
+Started GET "/recipes/1" for ::1 at 2017-03-21 21:02:18 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (4.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.8ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 5.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9:   <%= @recipe.description %>
+    10: </p>
+    11: <p>Ingredients <br>
+    12: <%= @recipe.ingredient.name %>
+    13: </p>
+    14: <p> Instructions <br>
+    15: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:12:in `_app_views_recipes_show_html_erb__1195834186420715872_70351488035300'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.6ms)
+Started GET "/recipes/" for ::1 at 2017-03-21 21:02:21 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/recipes/3" for ::1 at 2017-03-21 21:02:22 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (1.1ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 3], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 3], ["LIMIT", 1]]
+  [1m[36mInstruction Load (0.4ms)[0m  [1m[34mSELECT  "instructions".* FROM "instructions" WHERE "instructions"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 3], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (110.5ms)
+Completed 200 OK in 156ms (Views: 88.2ms | ActiveRecord: 64.8ms)
+
+
+Started GET "/recipes/2" for ::1 at 2017-03-21 21:02:26 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (2.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (1.2ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mIngredient Load (1.5ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 4.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9:   <%= @recipe.description %>
+    10: </p>
+    11: <p>Ingredients <br>
+    12: <%= @recipe.ingredient.name %>
+    13: </p>
+    14: <p> Instructions <br>
+    15: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:12:in `_app_views_recipes_show_html_erb__1195834186420715872_70351487111660'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.6ms)
+Started GET "/recipes/" for ::1 at 2017-03-21 21:02:29 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 39ms (Views: 34.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes/1" for ::1 at 2017-03-21 21:02:30 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9:   <%= @recipe.description %>
+    10: </p>
+    11: <p>Ingredients <br>
+    12: <%= @recipe.ingredient.name %>
+    13: </p>
+    14: <p> Instructions <br>
+    15: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:12:in `_app_views_recipes_show_html_erb__1195834186420715872_70351493076600'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.3ms)
+Started GET "/recipes/" for ::1 at 2017-03-21 21:02:32 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 43ms (Views: 39.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/5" for ::1 at 2017-03-21 21:02:33 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (24.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 5], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 5], ["LIMIT", 1]]
+  [1m[36mInstruction Load (0.6ms)[0m  [1m[34mSELECT  "instructions".* FROM "instructions" WHERE "instructions"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 5], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 71ms (Views: 40.2ms | ActiveRecord: 26.2ms)
+
+
+Started GET "/recipes/12" for ::1 at 2017-03-21 21:02:37 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (2.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 12], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.8ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 12], ["LIMIT", 1]]
+  [1m[36mInstruction Load (0.7ms)[0m  [1m[34mSELECT  "instructions".* FROM "instructions" WHERE "instructions"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 12], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 75ms (Views: 64.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/recipes/1" for ::1 at 2017-03-21 21:02:40 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (31.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 32.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9:   <%= @recipe.description %>
+    10: </p>
+    11: <p>Ingredients <br>
+    12: <%= @recipe.ingredient.name %>
+    13: </p>
+    14: <p> Instructions <br>
+    15: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:12:in `_app_views_recipes_show_html_erb__1195834186420715872_70351488249300'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.1ms)
+Started GET "/recipes/" for ::1 at 2017-03-21 21:02:42 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 46ms (Views: 41.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/2" for ::1 at 2017-03-21 21:02:44 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (25.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.8ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (37.0ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 28.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9:   <%= @recipe.description %>
+    10: </p>
+    11: <p>Ingredients <br>
+    12: <%= @recipe.ingredient.name %>
+    13: </p>
+    14: <p> Instructions <br>
+    15: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:12:in `_app_views_recipes_show_html_erb__1195834186420715872_70351459264320'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.4ms)
+Started GET "/recipes/" for ::1 at 2017-03-21 21:02:46 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/categories/1" for ::1 at 2017-03-21 21:02:49 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 108ms (Views: 59.6ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/recipes/2" for ::1 at 2017-03-21 21:02:51 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (19.7ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 2], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (31.3ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 20.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9:   <%= @recipe.description %>
+    10: </p>
+    11: <p>Ingredients <br>
+    12: <%= @recipe.ingredient.name %>
+    13: </p>
+    14: <p> Instructions <br>
+    15: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:12:in `_app_views_recipes_show_html_erb__1195834186420715872_70351502379020'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.0ms)
+Started GET "/categories/1" for ::1 at 2017-03-21 21:02:52 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (24.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 71ms (Views: 41.0ms | ActiveRecord: 25.1ms)
+
+
+Started GET "/recipes/10" for ::1 at 2017-03-21 21:02:54 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mIngredient Load (24.9ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mInstruction Load (0.6ms)[0m  [1m[34mSELECT  "instructions".* FROM "instructions" WHERE "instructions"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 10], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 81ms (Views: 49.0ms | ActiveRecord: 27.1ms)
+
+
+Started GET "/recipes/1" for ::1 at 2017-03-21 21:02:57 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (24.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 25.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9:   <%= @recipe.description %>
+    10: </p>
+    11: <p>Ingredients <br>
+    12: <%= @recipe.ingredient.name %>
+    13: </p>
+    14: <p> Instructions <br>
+    15: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:12:in `_app_views_recipes_show_html_erb__1195834186420715872_70351467374120'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.2ms)
+Started GET "/categories/1" for ::1 at 2017-03-21 21:02:59 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 37ms (Views: 30.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes/2/edit" for ::1 at 2017-03-21 21:03:02 -0400
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (5.8ms)
+  Rendered recipes/edit.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(recipe) do |f| %>
+    2:   <% if recipe.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(recipe.errors.count, "error") %> prohibited this recipe from being saved:</h2>
+  
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb___3539728668179538872_70351461353440'
+app/views/recipes/edit.html.erb:3:in `_app_views_recipes_edit_html_erb__13562262188907198_70351494272120'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.0ms)
+Started GET "/recipes/" for ::1 at 2017-03-21 21:03:04 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 50ms (Views: 44.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/categories/4" for ::1 at 2017-03-21 21:03:05 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 44ms (Views: 37.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recipes/9" for ::1 at 2017-03-21 21:03:06 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mInstruction Load (0.6ms)[0m  [1m[34mSELECT  "instructions".* FROM "instructions" WHERE "instructions"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 9], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 49ms (Views: 42.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/recipes/11" for ::1 at 2017-03-21 21:03:09 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mInstruction Load (0.8ms)[0m  [1m[34mSELECT  "instructions".* FROM "instructions" WHERE "instructions"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 11], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 47ms (Views: 38.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/categories/1" for ::1 at 2017-03-21 21:03:12 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."category_id" = $1[0m  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 47ms (Views: 42.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/1" for ::1 at 2017-03-21 21:03:19 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9:   <%= @recipe.description %>
+    10: </p>
+    11: <p>Ingredients <br>
+    12: <%= @recipe.ingredient.name %>
+    13: </p>
+    14: <p> Instructions <br>
+    15: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:12:in `_app_views_recipes_show_html_erb__1195834186420715872_70351502449480'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.2ms)
+Started GET "/recipes/1" for ::1 at 2017-03-21 21:03:55 -0400
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mImage Load (25.3ms)[0m  [1m[34mSELECT  "images".* FROM "images" WHERE "images"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."recipe_id" = $1 LIMIT $2[0m  [["recipe_id", 1], ["LIMIT", 1]]
+  Rendered recipes/show.html.erb within layouts/application (37.0ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 26.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9:   <%= @recipe.description %>
+    10: </p>
+    11: <p>Ingredients <br>
+    12: <%= @recipe.ingredient.name %>
+    13: </p>
+    14: <p> Instructions <br>
+    15: <%= @recipe.instruction.step %>
+  
+app/views/recipes/show.html.erb:12:in `_app_views_recipes_show_html_erb__1195834186420715872_70351494775460'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (133.0ms)
+Started GET "/recipes" for ::1 at 2017-03-21 21:03:57 -0400
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (16.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 67ms (Views: 46.2ms | ActiveRecord: 16.1ms)
+
+
