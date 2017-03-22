@@ -1,5 +1,6 @@
 class RecipesController < ApplicationController
 before_action :set_recipe, only: [:show, :destroy, :update, :update_ingredient, :update_instruction, :update_image, :new_ingredient]
+before_action :set_edit_recipe, only: []
 
   # GET /recipes
   # GET /recipes.json
@@ -92,13 +93,13 @@ def editingredient
 end
 
 def editinstruction
-  @recipe = Recipe.find(recipe_params)
+  @recipe = Recipe.find(params[:recipe_id])
   @instruction = @recipe.instruction
 
 end
 
 def editimage
-  @recipe = Recipe.find(params[:id])
+  @recipe = Recipe.find(params[:recipe_id])
   @image = @recipe.image
 
 end
@@ -164,6 +165,9 @@ end
     # Use callbacks to share common setup or constraints between actions.
     def set_recipe
       @recipe = Recipe.find(params[:id])
+    end
+    def set_edit_recipe
+      @recipe = Recipe.find(params[:recipe_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
