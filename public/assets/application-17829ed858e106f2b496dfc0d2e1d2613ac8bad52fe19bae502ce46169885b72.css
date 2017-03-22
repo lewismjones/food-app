@@ -1,4 +1,124 @@
 /*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.categoriesshow {
+  text-align: center;
+  height: 100vh;
+  width:100vw;
+  color: white;
+  font-size: 20px;
+  margin: auto; }
+#Beef {background-image: url("http://i64.tinypic.com/2e5v1vn.jpg"); }
+#Poultry {background-image: url("http://i65.tinypic.com/33m8jzo.jpg");}
+#Seafood {background-image: url("http://i68.tinypic.com/34niiva.jpg");}
+#Vegetarian {background-image: url("http://i66.tinypic.com/30uwjex.jpg");}
+#the-table {
+  background: rgba(0, 0, 0, 0.75);
+  display: inline-block;
+  text-align: left;
+  transform: translate(0, 160%)
+}
+#center-p {
+  text-align: center;
+}
+#part-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.table-text {
+  font-size: 25px;
+  line-height: 30px;
+}
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+
+.newrecipe {background-image: url(http://i64.tinypic.com/2j6ad95.jpg);}
+body {
+  background-color: #fff;
+  color: #333;
+}
+body, p, ol, ul, td {
+  font-family: helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0px;
+  padding :0px;
+}
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+a {
+  color: grey;
+}
+a:visited {
+  color: red;
+}
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+th {
+  padding-bottom: 5px;
+}
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+div.field,
+div.actions {
+  margin-bottom: 10px;
+}
+#notice {
+  color: green;
+}
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+label {
+  display: block;
+}
+.welcome {color: white; background-image: url("https://media.giphy.com/media/Mn2bDsPD8oo48/giphy.gif"); height: 100vh; margin: 0; padding: 0;}
+#greet {
+  font-family: 'Courgette', cursive;
+  font-size: 100px;
+  font-style: oblique;
+  font-weight: bold;
+  text-align: center;
+  transform: translate(0, 2000%)
+}
+/*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -10,11 +130,12 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
 /*body {background-image: url("https://media.giphy.com/media/lGbz7CsaCj4Tm/giphy.gif");}*/
  /*Headers*/
+
  ul {
     list-style-type: none;
     margin: 0;
