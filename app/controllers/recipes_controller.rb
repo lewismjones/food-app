@@ -1,5 +1,5 @@
 class RecipesController < ApplicationController
-before_action :set_recipe, only: [:show, :edit, :update, :destroy]
+before_action :set_recipe, only: [:show, :destroy]
 
   # GET /recipes
   # GET /recipes.json
@@ -15,7 +15,6 @@ before_action :set_recipe, only: [:show, :edit, :update, :destroy]
   # GET /recipes/new
   def new
     @recipe = Recipe.new
-    @instruction = Instruction.new
   end
 
   def newingredient
@@ -42,14 +41,14 @@ before_action :set_recipe, only: [:show, :edit, :update, :destroy]
   end
 
   def editingredient
-    # @recipe = Recipe.find(params[:recipe_id])
+    @recipe = Recipe.find(params[:recipe_id])
     #
     # @ingredient = @recipe.ingredient
     # puts "************"
     #   p @recipe
     #   p @ingredient
     # puts @recipe.ingredient
-    @ingredient = Ingredient.find(params[:recipe_id])
+    @ingredient = @recipe.ingredient
 
   end
 
