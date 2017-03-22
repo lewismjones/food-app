@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
-
+<div style="table-layout:fixed; width:1000px; margin-left: 20vw;" id="the-table-recipe2">
 <h1>Recipes</h1>
-
 <table >
   <thead>
     <tr>
@@ -9,7 +8,6 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody >
     <% @recipes.each do |recipe| %>
       <tr>
@@ -21,7 +19,6 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
-
 <%= link_to 'New Recipe', new_recipe_path %>
+</div>

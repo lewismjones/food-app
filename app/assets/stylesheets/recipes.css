@@ -2,5 +2,59 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
-
-.newrecipe {background-image: url(http://i64.tinypic.com/2j6ad95.jpg);}
+.newrecipe {
+  background-image: url(http://i64.tinypic.com/2j6ad95.jpg);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+/*.recipes {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}*/
+#background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#the-table {
+  background: rgba(0, 0, 0, 0.75);
+  display: inline-block;
+  text-align: left;
+  transform: translate(0, 200%)
+}
+#the-table-recipe {
+  background: rgba(0, 0, 0, 0.75);
+  width:80%;
+    margin-left:15%;
+    margin-right:15%;
+  display: inline-block;
+  text-align: left;
+  transform: translate(0, 200%)
+}
+#the-table-recipe2 {
+  background: rgba(0, 0, 0, 0.75);
+  width:80%;
+    margin-left:15%;
+    margin-right:15%;
+  display: inline-block;
+  text-align: left;
+  transform: translate(0, 50%)
+}
+#center-p {
+  text-align: center;
+  color: white;
+}
+#part-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.table-text {
+  font-size: 25px;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+#white {
+  color: white;
+}

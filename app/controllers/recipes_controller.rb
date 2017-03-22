@@ -1,5 +1,5 @@
 class RecipesController < ApplicationController
-before_action :set_recipe, only: [:show, :destroy]
+before_action :set_recipe, only: [:show, :destroy, :update, :update_ingredient, :update_instruction, :update_image, :new_ingredient]
 
   # GET /recipes
   # GET /recipes.json
@@ -32,31 +32,6 @@ before_action :set_recipe, only: [:show, :destroy]
     @recipe = Recipe.find(params[:recipe_id])
   end
 
-
-
-
-  # GET /recipes/1/edit
-  def edit
-
-  end
-
-  def editingredient
-    @recipe = Recipe.find(params[:recipe_id])
-    #
-    # @ingredient = @recipe.ingredient
-    # puts "************"
-    #   p @recipe
-    #   p @ingredient
-    # puts @recipe.ingredient
-    @ingredient = @recipe.ingredient
-
-  end
-
-  def editinstruction
-    @recipe = Recipe.find(params[:recipe_id])
-    @instruction = Instruction.find params[:recipe_id]
-
-  end
 
   # POST /recipes
   # POST /recipes.json
@@ -105,12 +80,36 @@ def create_image
   end
 end
 
+# GET /recipes/1/edit
+def edit
+  @recipe = Recipe.find(params[:id])
+end
+
+def editingredient
+  @recipe = Recipe.find(params[:recipe_id])
+  @ingredient = @recipe.ingredient
+
+end
+
+def editinstruction
+  @recipe = Recipe.find(recipe_params)
+  @instruction = @recipe.instruction
+
+end
+
+def editimage
+  @recipe = Recipe.find(params[:id])
+  @image = @recipe.image
+
+end
+
+
   # PATCH/PUT /recipes/1
   # PATCH/PUT /recipes/1.json
   def update
     respond_to do |format|
       if @recipe.update(recipe_params)
-        format.html { redirect_to edit_ingredient_path(@recipe) }
+        format.html { redirect_to update_ingredient_path(@recipe) }
         format.json { render :show, status: :ok, location: @recipe }
       else
         format.html { render :edit }
@@ -120,10 +119,9 @@ end
   end
 
   def update_ingredient
-    @recipe = Recipe.find(params[:ingredient][:recipe_id])
-    @ingredient = Ingredient.find_by recipe_id: @recipe.id
+    @ingredient = @recipe.ingredient
     if @ingredient.update(ingredient_params)
-      redirect_to edit_instruction_path(@recipe)
+      redirect_to update_instruction_path(@recipe)
     else
       render :new
     end
@@ -133,6 +131,16 @@ def update_instruction
   @instruction = Instruction.find_by(instruction_params)
   @recipe = Recipe.find(params[:instruction][:recipe_id])
   if @instruction.save!
+    redirect_to update_image_path(@recipe)
+  else
+    render :new
+  end
+end
+
+def update_image
+  @image = Image.find_by(image_params)
+  @recipe = Recipe.find(params[:image][:recipe_id])
+  if @image.save!
     redirect_to @recipe
   else
     render :new
@@ -160,7 +168,7 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def recipe_params
-      params.require(:recipe).permit(:description, :category_id)
+      params.require(:recipe).permit(:description, :category_id, :id)
     end
 
     def ingredient_params

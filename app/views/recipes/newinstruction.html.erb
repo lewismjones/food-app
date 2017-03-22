@@ -1,4 +1,7 @@
+<div class="newrecipe" id="background">
+<div id="the-table-recipe">
 <h1>How do you make it?</h1>
-
 <%= render 'form2', instruction: @instruction, recipe: @recipe%>
-<%= link_to 'Back', recipes_path %>
+<%= link_to 'Back', Category.find(@recipe.category_id) %>
+</div>
+</div>

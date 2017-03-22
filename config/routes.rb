@@ -15,13 +15,13 @@ post '/images/' => 'recipes#create_image'
 
 
 
-get '/:recipe_id/ingredient/edit' => 'recipes#editingredient', as: 'edit_ingredient'
+get '/:recipe_id/ingredients/edit' => 'recipes#editingredient', as: 'update_ingredient'
 patch '/ingredients/' => 'recipes#update_ingredient'
 
-get '/:recipe_id/instruction/edit' => 'recipes#editinstruction', as: 'edit_instruction'
+get '/:recipe_id/instructions/edit' => 'recipes#editinstruction', as: 'update_instruction'
 patch '/instructions/' => 'recipes#update_instruction'
 
-get '/:recipe_id/images/edit' => 'recipes#editinstruction', as: 'edit_image'
+get '/:recipe_id/images/edit' => 'recipes#editinstruction', as: 'update_image'
 patch '/images/' => 'recipes#update_image'
 
 
