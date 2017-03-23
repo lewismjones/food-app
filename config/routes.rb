@@ -24,6 +24,8 @@ patch '/:recipe_id/instructions/edit' => 'recipes#update_instruction'
 get '/:recipe_id/images/edit' => 'recipes#editimage', as: 'update_image'
 patch '/:recipe_id/images/edit' => 'recipes#update_image'
 
+get '/creators' => 'creators#index'
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
