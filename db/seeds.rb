@@ -4,6 +4,22 @@ Category.create!([
   {description: "Seafood"},
   {description: "Vegetarian"}
 ])
+
+Recipe.create!([
+  {description: "Rosemary steak with sauteed spinach", category_id: 1},
+  {description: "Chinese style beef with broccoli", category_id: 1},
+  {description: "Ny steak with arrugula and figs ", category_id: 1},
+  {description: "Thai style chicken with basmati rice", category_id: 2},
+  {description: "Grilled chicken with passley chutney", category_id: 2},
+  {description: "Greek chicken with yogurt sauce", category_id: 2},
+  {description: "Roasted salmon with parsley dijon glaze and hericot vert", category_id: 3},
+  {description: "Poached cod in a tomato sauce over rice", category_id: 3},
+  {description: "Sauteed shrimp with parsley tarragon", category_id: 3},
+  {description: "Shave asparagus delite", category_id: 4},
+  {description: "Linguini with edemame asparagus and goat cheese dressing", category_id: 4},
+  {description: "Quinoa salad with arugula, grapes with mustard vinagrette", category_id: 4}
+])
+
 Image.create!([
   {recipe_id: 1, image_url: "http://i64.tinypic.com/20o705.jpg"},
   {recipe_id: 2, image_url: "http://i63.tinypic.com/51ugxk.jpg"},
@@ -16,7 +32,7 @@ Image.create!([
   {recipe_id: 9, image_url: "http://i63.tinypic.com/2vnmdkm.jpg"},
   {recipe_id: 10, image_url: "http://i65.tinypic.com/9qv1xt.jpg"},
   {recipe_id: 11, image_url: "http://i67.tinypic.com/1zebl2s.jpg"},
-  {recipe_id: 12, image_url: "http://i63.tinypic.com/mimk5d.jpg"},
+  {recipe_id: 12, image_url: "http://i63.tinypic.com/mimk5d.jpg"}
 ])
 Ingredient.create!([
   {name: "1 Filet mignon\r\nSalt\r\npepper\r\nRosemary\r\nSpinach\r\nolive oil\r\ngarlic", recipe_id: 1},
@@ -44,19 +60,5 @@ Instruction.create!([
   {step: "Add salt pepper and chilli flakes to the shrimp \r\nsauteed the shrimp for 3 to 4 minutes untill are red \"do not over cook\"\r\nset aside the shrimp \r\nadd to the pan a 1/2 a cup of wine or vermouth to deglace the pan\r\ncook medium heat until all the alcohol evaporates\r\nadd the lemon juice of 1 lemon and the lemon zest\r\nreduce for 2 munutes \r\nadd the shrimp dd the choped a small bunch parsley and the choped tarragon \"4 leaves\"\r\nmix well and ready! you can add pasta or rice if you want \r\nEnjoy!", recipe_id: 9},
   {step: "Shave a good amount of asparagus in a mandolin or by hand\r\npan fryed with a little olve oil\r\nadd the cherry tomatos for 1 to 2 minutes always tossing with a tongs\r\nonce is ready add a little bit of rice vinegar salt and pepper\r\nadd to a nice plate and fry the eggs suny side up or optional \"soft or hard boiled eggs\"\r\nenjoy!", recipe_id: 10},
   {step: "Cook the pasta in a big pot for 8 min or follow the instructions\r\nonce cook set aside with olive oil and toss well\r\nin the meantime in a frying pan add olive oil, garlic and cook for 2 to 3 minutes\r\nadd the tomatos,  and the small choiped asparagus\r\nadd the edemame\r\nand cook for 3 min\r\nin a cup add three spoons of goat cheese and disolve with a little bit of the half and half half a cup\r\nadd pepper, you don't want to liquid.\r\nin a bowl toss the pasta with this mixture serve in a plate add pecorino and enjoy", recipe_id: 11},
-  {step: "Cook 1 cup of quinoa with 2 cups of water or vegetal broth for 18 minutes\r\nlet it cold\r\nonce is cold add the arugula\r\nthe feta, the choped half onion the grapes the pear sliced\r\nthe walnuts, and the vinaigrette ", recipe_id: 12},
-])
-Recipe.create!([
-  {description: "Rosemary steak with sauteed spinach", category_id: 1},
-  {description: "Chinese style beef with broccoli", category_id: 1},
-  {description: "Ny steak with arrugula and figs ", category_id: 1},
-  {description: "Thai style chicken with basmati rice", category_id: 2},
-  {description: "Grilled chicken with passley chutney", category_id: 2},
-  {description: "Greek chicken with yogurt sauce", category_id: 2},
-  {description: "Roasted salmon with parsley dijon glaze and hericot vert", category_id: 3},
-  {description: "Poached cod in a tomato sauce over rice", category_id: 3},
-  {description: "Sauteed shrimp with parsley tarragon", category_id: 3},
-  {description: "Shave asparagus delite", category_id: 4},
-  {description: "Linguini with edemame asparagus and goat cheese dressing", category_id: 4},
-  {description: "Quinoa salad with arugula, grapes with mustard vinagrette", category_id: 4}
+  {step: "Cook 1 cup of quinoa with 2 cups of water or vegetal broth for 18 minutes\r\nlet it cold\r\nonce is cold add the arugula\r\nthe feta, the choped half onion the grapes the pear sliced\r\nthe walnuts, and the vinaigrette ", recipe_id: 12}
 ])
