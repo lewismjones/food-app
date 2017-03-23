@@ -16,6 +16,7 @@ before_action :set_edit_recipe, only: [:update_ingredient, :update_instruction, 
   # GET /recipes/new
   def new
     @recipe = Recipe.new
+
   end
 
   def newingredient
