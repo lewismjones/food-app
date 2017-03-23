@@ -4,9 +4,11 @@ background-position: center; background-size: cover; height:100vh; width: 100vw;
 <div style="table-layout:fixed; width:1000px; margin-left: 20vw;" id="the-table">
 <p id="notice"><%= notice %></p>
 <p id="center-p">
-  <%= @recipe.description %> 
+  <%= @recipe.description %>
 </p>
+<div class="yolo">
 
+</div>
 <p id="white" ><strong>Ingredients: </strong><br>
 <%= @recipe.ingredient.name %>
 </p>
@@ -14,7 +16,7 @@ background-position: center; background-size: cover; height:100vh; width: 100vw;
 <p id="white"><strong> Instructions: </strong><br>
 <%= @recipe.instruction.step %>
 </p>
-<p id="center-p">
+<p id="center-links">
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 <%= link_to 'Back', recipes_path %>
 </p>

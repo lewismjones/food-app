@@ -2,7 +2,10 @@
 <div class="categoriesshow">
 <span id="the-table">
 <p id="center-p">
-  <%= @category.description %> 
+  <%= @category.description %>
+  <div class="yolo">
+
+  </div>
 
   <table id="part-table">
     <thead>
@@ -14,9 +17,9 @@
       <% @category.recipes.each do |recipe| %>
         <tr>
           <td class="table-text"><%= recipe.description %></td>
-          <td class="table-text"><%= link_to 'Show', recipe %></td>
-          <td class="table-text"><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-          <td class="table-text"><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td class="table-text-links"><%= link_to 'Show', recipe %></td>
+          <td class="table-text-links"><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+          <td class="table-links"><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>
